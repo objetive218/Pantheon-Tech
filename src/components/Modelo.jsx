@@ -7,6 +7,7 @@ const Modelo = (fuente, modelo, especificaciones, precio) => {
       <h2>{modelo}</h2>
       <p>{especificaciones}</p>
       <p>{precio}</p>
+      <button>carrito</button>
     </>
   );
 };
