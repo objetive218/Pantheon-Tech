@@ -24,6 +24,9 @@ const CarritoProvider = function ({ children }) {
         }, 0),
     });
   };
+  const removeModel = function(){
+    
+  }
   return (
     <CarritoContext.Provider value={{ carrito, setCarrito, addModel }}>
       {children}
