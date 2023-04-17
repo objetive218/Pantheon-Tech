@@ -5,6 +5,9 @@ catalogo.push({
   especificaciones: "algo",
   precio: 1200000,
   categoria: "celulares",
+},
+{
+  
 });
 
 export { catalogo };
