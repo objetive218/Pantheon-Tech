@@ -10,17 +10,12 @@ const Celulares = () => {
   });
   return (
     <>
-      <Modelo 
+      <Modelo
         fuente={cel[0].url}
         modelo={cel[0].modelo}
         especificaciones={cel[0].especificaciones}
         precio={cel[0].precio}
-        clic={function () {
-          return addModel(cel[0], 1);
-        }}
-        cllic1={function () {
-          return eliminarModel(cel[0], 1);
-        }}
+        id={cel[0].id}
       />
 
       <Modelo
