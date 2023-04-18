@@ -1,16 +1,15 @@
-import React, {useContext} from "react";
-import CarritoContext from "../contexts/CarritoContext";
+import React from "react";
 
-const Modelo = (fuente, modelo, especificaciones, precio) => {
-  const {carrito} = useContext(CarritoContext);
-  return ( <>
-  <img src={fuente} alt="imagen modelo" />
-  <h2>{modelo}</h2>
-  <p>{especificaciones}</p>
-  <p>{precio}</p>
-  <button >carrito</button>
-</>
-);}
-    
+const Modelo = (props) => {
+  return (
+    <>
+      <img src={props.fuente} alt="imagen modelo" />
+      <h2>{props.modelo}</h2>
+      <p>{props.especificaciones}</p>
+      <p>{props.precio}</p>
+      <button>carrito</button>
+    </>
+  );
+};
 
 export default Modelo;
