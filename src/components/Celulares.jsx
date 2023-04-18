@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import Modelo from "./Modelo";
+import { catalogo } from "../data/catalogo";
 
 const Celulares = () => {
+  const cel = catalogo.find(function (element) {
+    return element.categoria == "celulares";
+  });
   return (
-    <div>Celulares</div>
-  )
-}
+    <>
+      <Modelo />
+    </>
+  );
+};
 
-export default Celulares
+export default Celulares;
