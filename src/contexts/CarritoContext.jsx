@@ -20,15 +20,32 @@ const CarritoProvider = function ({ children }) {
           return item.precio * item.cantidad;
         })
         .reduce(function (actual, siguiente) {
-          return (actual += siguiente);
+          return (actual += siguiente) ;
         }, 0),
     });
   };
   const removeModel = function(){
     
   }
+  const eliminarModel = function (id) {
+    setCarrito({
+      items: carrito.items.filter(function (item) {
+        return item.id !== id;
+      }),
+      subTotal: carrito.items
+        .filter(function (item) {
+          return item.id !== id;
+        })
+        .map(function (item) {
+          return item.precio * item.cantidad;
+        })
+        .reduce(function (actual, siguiente) {
+          return (actual += siguiente);
+        }, 0),
+    });
+  };
   return (
-    <CarritoContext.Provider value={{ carrito, setCarrito, addModel }}>
+    <CarritoContext.Provider value={{ carrito, setCarrito, addModel, eliminarModel }}>
       {children}
     </CarritoContext.Provider>
   );

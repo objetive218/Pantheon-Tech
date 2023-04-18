@@ -8,6 +8,7 @@ const Modelo = (props) => {
       <p>{props.especificaciones}</p>
       <p>{props.precio}</p>
       <button onClick={props.clic}>carrito</button>
+      <button onClick={props.clic1}>eliminar</button>
     </>
   );
 };

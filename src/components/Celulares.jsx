@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import Modelo from "./Modelo";
 import { catalogo } from "../data/catalogo";
+import CarritoContext from "../contexts/CarritoContext";
 
 const Celulares = () => {
+  const { addModel, carrito, eliminarModel } = useContext(CarritoContext);
   const cel = catalogo.filter(function (item) {
     return item.categoria == "celulares";
   });
@@ -14,17 +16,22 @@ const Celulares = () => {
         especificaciones={cel[0].especificaciones}
         precio={cel[0].precio}
         clic={function () {
-          console.log("aqui");
+          return addModel(cel[0], 1);
+        }}
+        cllic1={function () {
+          return eliminarModel(cel[0], 1);
         }}
       />
+
       <Modelo
         fuente={cel[1].url}
         modelo={cel[1].modelo}
         especificaciones={cel[1].especificaciones}
         precio={cel[1].precio}
         clic={function () {
-          console.log("aqui");
+          return addModel(cel[1], 1);
         }}
+        cllic1={eliminarModel}
       />
       <Modelo
         fuente={cel[2].url}
@@ -34,6 +41,7 @@ const Celulares = () => {
         clic={function () {
           console.log("aqui");
         }}
+        cllic1={eliminarModel}
       />
       <Modelo
         fuente={cel[3].url}
