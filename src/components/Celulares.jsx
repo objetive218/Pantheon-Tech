@@ -10,7 +10,7 @@ const Celulares = () => {
   });
   return (
     <>
-      <Modelo
+      <Modelo 
         fuente={cel[0].url}
         modelo={cel[0].modelo}
         especificaciones={cel[0].especificaciones}
