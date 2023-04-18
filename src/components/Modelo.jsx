@@ -7,7 +7,7 @@ const Modelo = (props) => {
       <h2>{props.modelo}</h2>
       <p>{props.especificaciones}</p>
       <p>{props.precio}</p>
-      <button>carrito</button>
+      <button onClick={props.clic}>carrito</button>
     </>
   );
 };
