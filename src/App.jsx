@@ -7,6 +7,7 @@ const App = () => {
     <>
     <h1>hola</h1>
     <h1>hola</h1>
+    <Link to="/">inicio</Link>
     <Link to="/login">Login</Link>
     <Link to="/consolas">consolas</Link>
     <Link to="/celulares">celulares</Link>
