@@ -5,11 +5,25 @@ const CarritoProvider = function ({ children }) {
   const [carrito, setCarrito] = useState({ items: [], subTotal: 0 });
 
   const addModel = function (elemento, cantidad) {
-    const same = carrito.items.find(function (item) {
-      return item.id == elemento.id;
-    });
-    if (same) {
-      carrito.items[elemento.id].cantidad += 1;
+    if (
+      carrito.items.find((item) => item.id == elemento.id) != undefined &&
+      carrito.items.length > 0
+    ) {
+      setCarrito({
+        items: carrito.items.map((item) => {
+          if (item.id == elemento.id) {
+            item.cantidad += cantidad;
+          }
+          return item;
+        }),
+        subTotal: carrito.items
+          .map(function (item) {
+            return item.precio * item.cantidad;
+          })
+          .reduce(function (actual, next) {
+            return (actual += next);
+          }, 0),
+      });
     } else {
       setCarrito({
         items: [
