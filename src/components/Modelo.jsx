@@ -19,7 +19,7 @@ const Modelo = (props) => {
           <button
             type="button"
             onClick={function () {
-              addModel(props);
+              addModel(props.elemento, 1);
             }}
           >
             carrito

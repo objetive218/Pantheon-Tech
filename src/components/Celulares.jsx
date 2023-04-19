@@ -16,6 +16,7 @@ const Celulares = () => {
         especificaciones={cel[0].especificaciones}
         precio={cel[0].precio}
         id={cel[0].id}
+        elemento={cel[0]}
       />
 
       <Modelo
@@ -23,29 +24,24 @@ const Celulares = () => {
         modelo={cel[1].modelo}
         especificaciones={cel[1].especificaciones}
         precio={cel[1].precio}
-        clic={function () {
-          return addModel(cel[1], 1);
-        }}
-        cllic1={eliminarModel}
+        id={cel[1].id}
+        elemento={cel[1]}
       />
       <Modelo
         fuente={cel[2].url}
         modelo={cel[2].modelo}
         especificaciones={cel[2].especificaciones}
         precio={cel[2].precio}
-        clic={function () {
-          console.log("aqui");
-        }}
-        cllic1={eliminarModel}
+        id={cel[2].id}
+        elemento={cel[2]}
       />
       <Modelo
         fuente={cel[3].url}
         modelo={cel[3].modelo}
         especificaciones={cel[3].especificaciones}
         precio={cel[3].precio}
-        clic={function () {
-          console.log("aqui");
-        }}
+        id={cel[3].id}
+        elemento={cel[3]}
       />
     </>
   );
