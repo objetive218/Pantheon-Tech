@@ -42,7 +42,7 @@ const CarritoProvider = function ({ children }) {
           })
           .reduce(function (actual, siguiente) {
             return (actual += siguiente);
-          }, 0),
+          }, elemento.precio),
       });
     }
   };
