@@ -1,13 +1,16 @@
-
-
-
-.content-header {
-    background: #fff;
+.header {
+    background-color: white;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 99;
+    z-index: 1;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.3rem;
+    max-height: 50%;
 }
 .content-header header {
     max-width: 1100px;
@@ -19,9 +22,8 @@
 }
 
 .content-header header ul {
-    font-family: 'Inter Tight';
+
     font-weight: 600;
-    font-style: inherit;
     color: #E90064;
    display: flex;
    list-style: none; 
@@ -40,4 +42,11 @@
 
 .content-header header nav img {
 
+}
+.logo{
+    color: #E90064;
+
+}
+.carrito{
+    color:#E90064;
 }
