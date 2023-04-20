@@ -47,21 +47,39 @@ const CarritoProvider = function ({ children }) {
     }
   };
   const eliminarModel = function (id) {
-    setCarrito({
-      items: carrito.items.filter(function (item) {
-        return item.id != id;
-      }),
-      subTotal: carrito.items
-        .filter(function (item) {
+    if (carrito.items.find((item) => item.cantidad > 1)) {
+      setCarrito({
+        items: carrito.items.map((item) => {
+          return (item.cantidad -= 1);
+        }),
+        subTotal: carrito.items
+          .filter(function (item) {
+            return item.id != id;
+          })
+          .map(function (item) {
+            return item.precio * item.cantidad;
+          })
+          .reduce(function (actual, siguiente) {
+            return (actual += siguiente);
+          }, 0),
+      });
+    } else {
+      setCarrito({
+        items: carrito.items.filter(function (item) {
           return item.id != id;
-        })
-        .map(function (item) {
-          return item.precio * item.cantidad;
-        })
-        .reduce(function (actual, siguiente) {
-          return (actual += siguiente);
-        }, 0),
-    });
+        }),
+        subTotal: carrito.items
+          .filter(function (item) {
+            return item.id != id;
+          })
+          .map(function (item) {
+            return item.precio * item.cantidad;
+          })
+          .reduce(function (actual, siguiente) {
+            return (actual += siguiente);
+          }, 0),
+      });
+    }
   };
   return (
     <CarritoContext.Provider
