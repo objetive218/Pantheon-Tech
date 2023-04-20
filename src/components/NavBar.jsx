@@ -1,25 +1,19 @@
-import React from 'react'
-import NavBar from '../css/NavBar.css'
+import React from "react";
+import StyleNavBar from "../css/NavBar.css";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    class NavBar extends React.Component {
-        render() {
-          return (
-            <nav id='nav'>
-              <ul>
-                <li><img src="" alt="" /></li>
-                <li><a href="">Inicio</a></li>
-                <li><a href=".//Celulares.jsx">celulares</a></li>
-                <li><a href=".//Computadores.jsx">Computadores</a></li>
-                <li><a href=".//Consolas.jsx">Consolas Y Videojuegos</a></li>
-                <li><a href=".//Audio.jsx">Audio y Accesorios</a></li>
-              </ul>
-            </nav>
-          );
-        }
-      }
-  )
-}
+    <nav id="nav">
+      <Link to="/">
+        <img src="" alt="" />
+      </Link>
+      <Link to="/celulares">celulares</Link>
+      <Link to="/computadores">Computadores</Link>
+      <Link to="/consolas">Consolas Y Videojuegos</Link>
+      <Link to="/audio">Audio y Accesorios</Link>
+    </nav>
+  );
+};
 
-export default NavBar
+export default NavBar;
