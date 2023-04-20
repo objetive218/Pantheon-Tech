@@ -41,9 +41,13 @@
 
 .logo {
   color: #e90064;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .carrito {
   color: #e90064;
-  font-size: 3rem;
+  font-size: 2rem;
+}
+.buscar{
+    color:#e90064;
+    font-size: 1rem;
 }
