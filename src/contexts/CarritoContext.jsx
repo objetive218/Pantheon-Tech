@@ -47,10 +47,10 @@ const CarritoProvider = function ({ children }) {
     }
   };
   const eliminarModel = function (id) {
-    if (carrito.items.find((item) => item.cantidad > 1)) {
+    if (carrito.items.find((item) => item.cantidad >= 1)) {
       setCarrito({
         items: carrito.items.map((item) => {
-          return (item.cantidad -= 1);
+          return (item.cantidad -= item.length );
         }),
         subTotal: carrito.items
           .filter(function (item) {
