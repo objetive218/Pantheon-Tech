@@ -9,6 +9,7 @@ import Celulares from "./components/Celulares";
 import Computadores from "./components/Computadores";
 import Login from "./components/Login";
 import Carrito from "./components/Carrito";
+import { CatalogoProvider } from "./contexts/CatalogoContext";
 
 const router = createBrowserRouter([
   {
@@ -43,8 +44,10 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <CarritoProvider>
-      <RouterProvider router={router} />
-    </CarritoProvider>
+    <CatalogoProvider>
+      <CarritoProvider>
+        <RouterProvider router={router} />
+      </CarritoProvider>
+    </CatalogoProvider>
   </React.StrictMode>
 );
