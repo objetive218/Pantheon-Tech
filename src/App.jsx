@@ -1,21 +1,16 @@
 import { Link } from "react-router-dom";
-import React from 'react'
+import React from "react";
+import NavBar from "./components/NavBar";
 
 const App = () => {
   return (
-    
     <>
-    <h1>hola</h1>
-    <h1>hola</h1>
-    <Link to="/">inicio</Link>
-    <Link to="/login">Login</Link>
-    <Link to="/consolas">consolas</Link>
-    <Link to="/celulares">celulares</Link>
-    <Link to="/computadores">computadores</Link>
-    <Link to="/audio">audio</Link>
-    <Link to="/carrito">carrito</Link>
+      <h1>hola</h1>
+      <h1>hola</h1>
+      <NavBar />
+      <Link to="/">inicio</Link>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
