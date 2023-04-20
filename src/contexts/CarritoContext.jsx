@@ -47,15 +47,18 @@ const CarritoProvider = function ({ children }) {
     }
   };
   const eliminarModel = function (id) {
-    if (carrito.items.find((item) => item.cantidad >= 1)) {
+    if (
+      carrito.items.find((item) => item.id == id) != undefined &&
+      carrito.items.find((item) => item.id == id).cantidad > 1
+    ) {
       setCarrito({
         items: carrito.items.map((item) => {
-          return (item.cantidad -= item.length );
+          if (item.id == id) {
+            item.cantidad -= 1;
+          }
+          return item;
         }),
         subTotal: carrito.items
-          .filter(function (item) {
-            return item.id != id;
-          })
           .map(function (item) {
             return item.precio * item.cantidad;
           })
