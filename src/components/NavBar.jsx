@@ -6,7 +6,8 @@ import CelularesTitle from "../img/celulares.svg";
 import ComputadorTitle from "../img/computadores.svg";
 import VideojuegoTitle from "../img/videojuegos.svg";
 import AudioTitle from "../img/audio.svg";
-import { BsFillPersonFill, BsCart2, BsSearch } from "react-icons/bs";
+import { BsFillPersonFill, BsCart2 } from "react-icons/bs";
+import Buscador from "./Buscador";
 
 const NavBar = () => {
   return (
@@ -26,8 +27,9 @@ const NavBar = () => {
       <Link to="/audio">
         <img src={AudioTitle} alt="audio" />
       </Link>
-      <Link className={StyleNavBar.buscar} to="/buscar"><BsSearch/>
+      <Link  to="/buscar">
       </Link>
+      <Buscador className={StyleNavBar.buscar}/>
       <Link className={StyleNavBar.logo} to="/login">
         <BsFillPersonFill />
       </Link>
