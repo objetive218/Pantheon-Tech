@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import BuscadorContext from "../contexts/BuscadorContext";
 import { BsSearch } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Buscador = function () {
   const { setBuscar } = useContext(BuscadorContext);
@@ -12,8 +13,9 @@ const Buscador = function () {
   return (
     <form action="#">
       <input type="text" placeholder="buscar" onChange={search} />
-
-      <BsSearch />
+      <Link to="/celulares">
+        <BsSearch />
+      </Link>
     </form>
   );
 };
