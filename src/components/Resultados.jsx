@@ -12,11 +12,11 @@ const Resultados = () => {
   useEffect(
     function () {
       setCarga(
-        productos.filter(function (item) {
+        productos.find(function (item) {
           return item.modelo == buscar;
         })
       );
-    }[buscar]
+    },[buscar]
   );
 
   return (
