@@ -11,9 +11,9 @@ const Buscador = function () {
   };
 
   return (
-    <form action="#">
+    <form action="/resultados">
       <input type="text" placeholder="buscar" onChange={search} />
-      <Link to="/celulares">
+      <Link to="/resultados">
         <BsSearch />
       </Link>
     </form>
