@@ -1,0 +1,14 @@
+.search{
+ color: #e90064;
+ background-color: #e9006539;
+ padding: 0.5rem;
+ border-radius: 0.5rem;
+ display: flex;
+ align-items: center;
+}
+.buscar {
+ background-color: #e9006502;
+ padding: 0 0.5rem;
+ width: 5rem;
+ outline: none;
+}
