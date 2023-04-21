@@ -1,6 +1,5 @@
 import React, { useContext, useState, useEffect } from "react";
 import Modelo from "./Modelo";
-import { catalogo } from "../data/catalogo";
 import CatalogoContext from "../contexts/CatalogoContext";
 
 const Celulares = () => {
