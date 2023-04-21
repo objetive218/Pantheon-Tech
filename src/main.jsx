@@ -4,6 +4,7 @@ import App from "./App";
 import "./index.css";
 import { CarritoProvider } from "./contexts/CarritoContext";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Resultados from "./components/Resultados";
 import Consolas from "./components/Consolas";
 import Celulares from "./components/Celulares";
 import Computadores from "./components/Computadores";
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
   {
     path: "/carrito",
     element: <Carrito />,
+  },
+  {
+    path: "/resultados",
+    element: <Resultados />
   },
 ]);
 
