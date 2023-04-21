@@ -20,7 +20,7 @@ const Celulares = () => {
       {cel != null
         ? cel.map(function (element, index) {
             return (
-              <Modelo
+              <Modelo key = {index}
                 fuente={cel[index]?.url}
                 modelo={cel[index]?.modelo}
                 especificaciones={cel[index]?.especificaciones}
