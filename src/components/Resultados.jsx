@@ -1,9 +1,39 @@
-import React,{useContext,useState} from 'react'
+import React, { useContext, useState, useEffect } from "react";
+import CatalogoContext from "../contexts/CatalogoContext";
+import BuscadorContext from "../contexts/BuscadorContext";
+import NavBar from "./NavBar";
 
 const Resultados = () => {
-  return (
-    <div>Resultados</div>
-  )
-}
+  const {productos, setProductos} = useContext(CatalogoContext)
+  const {buscar, setBuscar}= useContext(BuscadorContext)
+  const [carga, setCarga] = useState(null)
 
-export default Resultados
+  useEffect(function(){
+    setCarga(productos.filter(function(item){
+      return item.modelo == buscar
+    }))
+  }[buscar])
+
+  return (
+    <>
+      <NavBar/>
+
+      {buscar == null || String(buscar).length < 3?
+        carga.map(function (element, index) {
+            return (
+              <Modelo
+                fuente={carga[index]?.url}
+                modelo={carga[index]?.modelo}
+                especificaciones={carga[index]?.especificaciones}
+                precio={carga[index]?.precio}
+                id={carga[index]?.id}
+                elemento={carga[index]}
+              />
+            );
+          })
+        : ""}
+    </>
+  );
+};
+
+export default Resultados;
