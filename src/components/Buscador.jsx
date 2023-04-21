@@ -11,11 +11,9 @@ const Buscador = function () {
   };
 
   return (
-    <form action="/resultados">
+    <form>
       <input type="text" placeholder="buscar" onChange={search} />
-      <Link to="/resultados">
         <BsSearch />
-      </Link>
     </form>
   );
 };
