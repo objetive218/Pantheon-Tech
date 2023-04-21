@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import BuscadorContext from "../contexts/BuscadorContext";
 import { BsSearch } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import StyleSearch from "../css/Buscador.module.css"
 
 const Buscador = function () {
   const { setBuscar } = useContext(BuscadorContext);
@@ -11,9 +11,9 @@ const Buscador = function () {
   };
 
   return (
-    <form>
-      <input type="text" placeholder="buscar" onChange={search} />
+    <form className={StyleSearch.search}>
         <BsSearch />
+      <input className={StyleSearch.buscar} type="text" onChange={search} />
     </form>
   );
 };
