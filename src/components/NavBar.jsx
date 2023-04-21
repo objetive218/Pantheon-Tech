@@ -27,8 +27,6 @@ const NavBar = () => {
       <Link to="/audio">
         <img src={AudioTitle} alt="audio" />
       </Link>
-      <Link  to="/buscar">
-      </Link>
       <Buscador className={StyleNavBar.buscar}/>
       <Link className={StyleNavBar.logo} to="/login">
         <BsFillPersonFill />
