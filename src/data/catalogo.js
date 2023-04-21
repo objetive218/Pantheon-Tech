@@ -39,7 +39,16 @@ catalogo.push(
     precio: 1200000,
     categoria: "computadores",
     url: "https://www.fayerwayer.com/resizer/-jwPe4qxnuDsKL_diDGE3wMb2Z8=/800x0/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/metroworldnews/BLASEIK4SZCVTIAVUVORVMP6L4.jpg",
+  },
+  {
+    id: 5,
+    modelo: "asus 101",
+    especificaciones: "computador asus",
+    precio: 800000,
+    categoria: "computadores",
+    url: "https://www.fayerwayer.com/resizer/-jwPe4qxnuDsKL_diDGE3wMb2Z8=/800x0/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/metroworldnews/BLASEIK4SZCVTIAVUVORVMP6L4.jpg",
   }
+
 );
 
 export { catalogo };
