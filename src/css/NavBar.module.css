@@ -10,35 +10,32 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.3rem;
-  max-height: 50%;
 }
-.content-header header {
-  max-width: 1100px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 20px;
+.celulares{
+
 }
 
-.content-header header ul {
-  font-weight: 600;
-  color: #e90064;
-  display: flex;
-  list-style: none;
+.celulares :hover {
+  transform: scale(1.2);
 }
-.content-header header nav ul li a {
-  text-align: none;
-  color: #e90064;
-  margin: 0 15px;
-  padding: 3px;
-  transition: 0.5s;
-  text-decoration: none;
-}
-.content-header header nav ul li a:hover {
-  color: #060047;
-}
+.computadores {
 
+}
+.computadores :hover {
+  transform: scale(1.2);
+}
+.consolas {
+
+}
+.consolas :hover{
+  transform: scale(1.2);
+}
+.audio{
+
+}
+.audio :hover{
+  transform: scale(1.2);
+}
 .logo {
   color: #e90064;
   font-size: 2rem;
