@@ -2,24 +2,29 @@ import React, { useContext, useState, useEffect } from "react";
 import CatalogoContext from "../contexts/CatalogoContext";
 import BuscadorContext from "../contexts/BuscadorContext";
 import NavBar from "./NavBar";
+import Modelo from "./Modelo";
 
 const Resultados = () => {
-  const {productos, setProductos} = useContext(CatalogoContext)
-  const {buscar, setBuscar}= useContext(BuscadorContext)
-  const [carga, setCarga] = useState(null)
+  const { productos, setProductos } = useContext(CatalogoContext);
+  const { buscar, setBuscar } = useContext(BuscadorContext);
+  const [carga, setCarga] = useState(null);
 
-  useEffect(function(){
-    setCarga(productos.filter(function(item){
-      return item.modelo == buscar
-    }))
-  }[buscar])
+  useEffect(
+    function () {
+      setCarga(
+        productos.filter(function (item) {
+          return item.modelo == buscar;
+        })
+      );
+    }[buscar]
+  );
 
   return (
     <>
-      <NavBar/>
+      <NavBar />
 
-      {buscar == null || String(buscar).length < 3?
-        carga.map(function (element, index) {
+      {buscar == null || String(buscar).length < 3
+        ? carga.map(function (element, index) {
             return (
               <Modelo
                 fuente={carga[index]?.url}
@@ -31,7 +36,7 @@ const Resultados = () => {
               />
             );
           })
-        : ""}
+        : <h1>error</h1>}
     </>
   );
 };
