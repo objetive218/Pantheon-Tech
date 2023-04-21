@@ -15,16 +15,16 @@ const NavBar = () => {
       <Link to="/">
         <img src={LogoPantheon} alt="" />
       </Link>
-      <Link to="/celulares">
+      <Link className={StyleNavBar.celulares} to="/celulares">
         <img src={CelularesTitle} alt="celulares" />
       </Link>
-      <Link to="/computadores">
+      <Link className={StyleNavBar.computadores} to="/computadores">
         <img src={ComputadorTitle} alt="computadores" />
       </Link>
-      <Link to="/consolas">
+      <Link className={StyleNavBar.consolas} to="/consolas">
         <img src={VideojuegoTitle} alt="videojuegos" />
       </Link>
-      <Link to="/audio">
+      <Link className={StyleNavBar.audio} to="/audio">
         <img src={AudioTitle} alt="audio" />
       </Link>
       <Buscador className={StyleNavBar.buscar}/>
