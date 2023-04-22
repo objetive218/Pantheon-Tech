@@ -31,7 +31,7 @@ const NavBar = () => {
       <Link className={StyleNavBar.logo} to="/login">
         <BsFillPersonFill />
       </Link>
-      <Link className={StyleNavBar.carrito} to="/carrito">
+      <Link className={StyleNavBar.carrito} to="/carro">
         <BsCart2 />
       </Link>
     </nav>
