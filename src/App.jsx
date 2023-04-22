@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 import React, { useContext, useState, useEffect } from "react";
 import NavBar from "./components/NavBar";
 import CatalogoContext from "./contexts/CatalogoContext";
