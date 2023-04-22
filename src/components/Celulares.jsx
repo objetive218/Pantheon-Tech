@@ -1,9 +1,10 @@
 import React, { useContext, useState, useEffect } from "react";
 import Modelo from "./Modelo";
 import CatalogoContext from "../contexts/CatalogoContext";
+import NavBar from "./NavBar"
 
 const Celulares = () => {
-  const { productos, setProductos } = useContext(CatalogoContext);
+  const { productos} = useContext(CatalogoContext);
   const [cel, setCel] = useState([]);
   useEffect(
     function () {
@@ -17,6 +18,7 @@ const Celulares = () => {
   );
   return (
     <>
+    <NavBar />
       {cel != null
         ? cel.map(function (element, index) {
             return (
