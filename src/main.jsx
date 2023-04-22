@@ -8,7 +8,7 @@ import Consolas from "./components/Consolas";
 import Celulares from "./components/Celulares";
 import Computadores from "./components/Computadores";
 import Login from "./components/Login";
-import Carrito from "./components/Carrito";
+import Carro from "./components/Carro";
 import { CatalogoProvider } from "./contexts/CatalogoContext";
 import { BuscadorProvider } from "./contexts/BuscadorContext";
 
@@ -38,8 +38,8 @@ const router = createBrowserRouter([
     element: <Login />,
   },
   {
-    path: "/carrito",
-    element: <Carrito />,
+    path: "/carro",
+    element: <Carro />,
   },
 ]);
 
