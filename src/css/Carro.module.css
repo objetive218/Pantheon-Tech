@@ -29,6 +29,8 @@
   height: 1.5rem;
   margin: 1rem;
   border-radius: 2rem;
+  background-color: #060047;
+  color: white;
 }
 .all{
   display: flex;
