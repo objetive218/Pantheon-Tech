@@ -1,6 +1,9 @@
 import CarritoContext from "../contexts/CarritoContext"
 import React,{useContext, useState, useEffect} from 'react'
 import Modelo from "./Modelo"
+import ModeloCar from "./ModeloCar"
+import CarroStyle from "../css/Carro.module.css"
+import NavBar from "./NavBar"
 
 const Carro = () => {
   const {carrito} = useContext(CarritoContext)
@@ -11,21 +14,24 @@ const Carro = () => {
   
   return (
     <>
-    
+    <NavBar/>
+    <h1>Carrito De Compras</h1>
+    <section className={CarroStyle.forma}>
     {lista != null
         ? (lista.map(function (element, index) {
-            return (
-              <Modelo key = {index}
-                fuente={lista[index]?.url}
-                modelo={lista[index]?.modelo}
-                especificaciones={lista[index]?.especificaciones}
-                precio={lista[index]?.precio}
-                id={lista[index]?.id}
-                elemento={lista[index]}
-              />
+          return (
+            <ModeloCar key = {index} 
+            url={lista[index]?.url}
+            modelo={lista[index]?.modelo}
+            precio={lista[index]?.precio}
+            cantidad={lista[index]?.cantidad}
+            id={lista[index]?.id}
+            elemento={lista[index]}
+            />
             );
           }))
-        : ""}
+          : ""}
+          </section>
     </>
     
   )
