@@ -11,7 +11,7 @@ const ModeloCar = (props) => {
       <h2>{props.precio}</h2>
       <h2>{props.cantidad}</h2>
       <form action="#">
-          <button
+          <button className={ModCarStyle.botton1}
             type="button"
             onClick={function () {
               addModel(props.elemento, 1);
@@ -19,7 +19,7 @@ const ModeloCar = (props) => {
           >
             +
           </button>
-          <button
+          <button className={ModCarStyle.botton1}
             type="button"
             onClick={function () {
               eliminarModel(props.id);
