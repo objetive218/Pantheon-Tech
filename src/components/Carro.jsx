@@ -8,8 +8,8 @@ import NavBar from "./NavBar";
 const Carro = () => {
   const { carrito } = useContext(CarritoContext);
   const [lista, setLista] = useState([]);
-  const [total , setTotal] = useState(1)
-  const [complete, setComplete] = useState(1)
+  const [total , setTotal] = useState(0)
+  const [complete, setComplete] = useState(0)
   useEffect(
     function () {
       setLista(carrito.items);
