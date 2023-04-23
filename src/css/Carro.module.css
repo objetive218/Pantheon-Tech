@@ -4,7 +4,7 @@
   position: absolute;
   left: 0;
   padding-left: 3.5rem;
-  gap: 1rem;
+  gap: 1.2rem;
   scroll-behavior: auto;
   max-width: 50%;
   max-height: 50%;
@@ -38,9 +38,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
 }
 .title{
   display: flex;
   position: absolute;
   bottom: 48rem;
+  right: 20rem;
 }
