@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 3rem;
+  gap: 4rem;
   position: sticky;
   z-index: 1;
   left: 0;
