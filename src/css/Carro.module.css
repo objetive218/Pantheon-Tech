@@ -6,7 +6,7 @@
   padding-left: 3.5rem;
   gap: 1.2rem;
   scroll-behavior: auto;
-  max-width: 50%;
+  max-width: 60%;
   max-height: 50%;
 }
 .checkout{ 
@@ -18,8 +18,8 @@
   padding: 1rem;
   gap: 1rem;
   width: 23%;
-  border-color: #E90064;
   border: ridge #E90064;
+  border-radius: 1.5rem;
 }
 .tituloCar{
   display: flex;
