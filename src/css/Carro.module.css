@@ -3,13 +3,15 @@
   flex-direction: column;
   position: absolute;
   left: 0;
+  padding-left: 3.5rem;
+  gap: 1rem;
 }
 .checkout{ 
   display: flex;
   flex-direction: column;
   position: absolute;
   right: 0;
-  margin: 2rem;
+  margin: 2rem 6rem 2rem 2rem;
   padding: 1rem;
   gap: 1rem;
   border-color: #E90064;
