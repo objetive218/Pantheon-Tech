@@ -25,3 +25,13 @@
   margin: 1rem;
   border-radius: 2rem;
 }
+.all{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title{
+  display: flex;
+  position: fixed;
+  bottom: 48rem;
+}
