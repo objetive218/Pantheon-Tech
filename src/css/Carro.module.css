@@ -17,6 +17,7 @@
   margin: 2rem 6rem 2rem 2rem;
   padding: 1rem;
   gap: 1rem;
+  width: 23%;
   border-color: #E90064;
   border: ridge #E90064;
 }
@@ -26,11 +27,12 @@
 }
 .botton1{
   width: 8rem;
-  height: 1.5rem;
+  height: 2rem;
   margin: 1rem;
   border-radius: 2rem;
   background-color: #060047;
   color: white;
+  justify-content: center;
 }
 .all{
   display: flex;
