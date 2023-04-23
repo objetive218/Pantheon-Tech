@@ -50,8 +50,8 @@ const Carro = () => {
           <p> {`Subtotal: ${total}`}</p>
           <p> {carrito.subTotal == 0 ? "Envio 0": "Envio 40000" }</p>
           <p> {`total: ${complete}`}</p>
-          <form className={CarroStyle.botton1}>
-            <button>Finalizar compra</button>
+          <form action="#">
+            <button className={CarroStyle.botton1}>Finalizar compra</button>
           </form>
         </article>
       </section>
