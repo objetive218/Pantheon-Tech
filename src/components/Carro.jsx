@@ -1,6 +1,5 @@
 import CarritoContext from "../contexts/CarritoContext";
 import React, { useContext, useState, useEffect } from "react";
-import Modelo from "./Modelo";
 import ModeloCar from "./ModeloCar";
 import CarroStyle from "../css/Carro.module.css";
 import NavBar from "./NavBar";
