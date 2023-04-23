@@ -1,6 +1,6 @@
-import React,{useContext} from 'react'
-import CarritoContext from '../contexts/CarritoContext';
-import ModCarStyle from "../css/ModeloCar.module.css"
+import React, { useContext } from "react";
+import CarritoContext from "../contexts/CarritoContext";
+import ModCarStyle from "../css/ModeloCar.module.css";
 
 const ModeloCar = (props) => {
   const { eliminarModel, addModel } = useContext(CarritoContext);
@@ -9,27 +9,29 @@ const ModeloCar = (props) => {
       <img className={ModCarStyle.image} src={props.url} alt="imagen" />
       <h1>{props.modelo}</h1>
       <h2>{props.precio}</h2>
-      <h2>{props.cantidad}</h2>
       <form action="#">
-          <button className={ModCarStyle.botton1}
-            type="button"
-            onClick={function () {
-              eliminarModel(props.id);
-            }}
-          >
-            -
-          </button>
-          <button className={ModCarStyle.botton1}
-            type="button"
-            onClick={function () {
-              addModel(props.elemento, 1);
-            }}
-          >
-            +
-          </button>
-        </form>
+        <button
+          className={ModCarStyle.botton1}
+          type="button"
+          onClick={function () {
+            eliminarModel(props.id);
+          }}
+        >
+          -
+        </button>
+        <span>{props.cantidad}</span>
+        <button
+          className={ModCarStyle.botton1}
+          type="button"
+          onClick={function () {
+            addModel(props.elemento, 1);
+          }}
+        >
+          +
+        </button>
+      </form>
     </section>
-  )
-}
+  );
+};
 
-export default ModeloCar
+export default ModeloCar;
