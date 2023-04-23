@@ -2,6 +2,7 @@ import React, { useContext, useState, useEffect } from "react";
 import Modelo from "./Modelo";
 import CatalogoContext from "../contexts/CatalogoContext";
 import NavBar from "./NavBar"
+import CelularesTitle from "../img/celulares.svg";
 
 const Celulares = () => {
   const { productos} = useContext(CatalogoContext);
@@ -19,6 +20,7 @@ const Celulares = () => {
   return (
     <>
     <NavBar />
+    <img src={CelularesTitle} alt="logo" />
       {cel != null
         ? cel.map(function (element, index) {
             return (
