@@ -1,0 +1,14 @@
+.box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  position: sticky;
+  z-index: 1;
+  left: 0;
+  right: 5rem;
+}
+.image{
+  width: 10rem;
+}
