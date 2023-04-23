@@ -14,18 +14,18 @@ const ModeloCar = (props) => {
           <button className={ModCarStyle.botton1}
             type="button"
             onClick={function () {
-              addModel(props.elemento, 1);
-            }}
-          >
-            +
-          </button>
-          <button className={ModCarStyle.botton1}
-            type="button"
-            onClick={function () {
               eliminarModel(props.id);
             }}
           >
             -
+          </button>
+          <button className={ModCarStyle.botton1}
+            type="button"
+            onClick={function () {
+              addModel(props.elemento, 1);
+            }}
+          >
+            +
           </button>
         </form>
     </section>
