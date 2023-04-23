@@ -56,6 +56,38 @@ catalogo.push(
     precio: 800000,
     categoria: "computadores",
     url: "https://www.fayerwayer.com/resizer/-jwPe4qxnuDsKL_diDGE3wMb2Z8=/800x0/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/metroworldnews/BLASEIK4SZCVTIAVUVORVMP6L4.jpg",
+  },
+  {
+    id: 6,
+    modelo: "asus 101",
+    especificaciones: "computador asus",
+    precio: 800000,
+    categoria: "computadores",
+    url: "https://www.fayerwayer.com/resizer/-jwPe4qxnuDsKL_diDGE3wMb2Z8=/800x0/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/metroworldnews/BLASEIK4SZCVTIAVUVORVMP6L4.jpg",
+  },
+  {
+    id: 7,
+    modelo: "asus 101",
+    especificaciones: "computador asus",
+    precio: 800000,
+    categoria: "computadores",
+    url: "https://www.fayerwayer.com/resizer/-jwPe4qxnuDsKL_diDGE3wMb2Z8=/800x0/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/metroworldnews/BLASEIK4SZCVTIAVUVORVMP6L4.jpg",
+  },
+  {
+    id: 8,
+    modelo: "Xbox Series X",
+    especificaciones: "videojuegos",
+    precio: 800000,
+    categoria: "videojuegos",
+    url: "https://www.fayerwayer.com/resizer/-jwPe4qxnuDsKL_diDGE3wMb2Z8=/800x0/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/metroworldnews/BLASEIK4SZCVTIAVUVORVMP6L4.jpg",
+  },
+  {
+    id: 9,
+    modelo: "Xbox Series X",
+    especificaciones: "videojuegos",
+    precio: 800000,
+    categoria: "videojuegos",
+    url: "https://www.fayerwayer.com/resizer/-jwPe4qxnuDsKL_diDGE3wMb2Z8=/800x0/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/metroworldnews/BLASEIK4SZCVTIAVUVORVMP6L4.jpg",
   }
 );
 
