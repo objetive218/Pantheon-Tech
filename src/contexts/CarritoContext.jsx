@@ -32,6 +32,7 @@ const CarritoProvider = function ({ children }) {
             id: elemento.id,
             modelo: elemento.modelo,
             categoria: elemento.categoria,
+            url: elemento.url,
             precio: elemento.precio,
             cantidad: cantidad,
           },
