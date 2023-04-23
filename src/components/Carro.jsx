@@ -14,7 +14,12 @@ const Carro = () => {
     function () {
       setLista(carrito.items);
       setTotal(carrito.subTotal);
-      setComplete(carrito.subTotal + 40000);
+      if(carrito.subTotal == 0 ){
+        setComplete(carrito.subTotal);
+      }else{
+        setComplete(carrito.subTotal + 40000);
+      }
+      
     },
     [carrito]
   );
@@ -44,7 +49,7 @@ const Carro = () => {
         <article className={CarroStyle.checkout}>
           <h2 className={CarroStyle.tituloCar}>Total del carrito</h2>
           <p> {`Subtotal: ${total}`}</p>
-          <p> Envio 40000</p>
+          <p> {carrito.subTotal == 0 ? "Envio 0": "Envio 40000" }</p>
           <p> {`total: ${complete}`}</p>
           <form className={CarroStyle.botton1}>
             <button>Finalizar compra</button>
