@@ -4,6 +4,9 @@ import NavBar from "./components/NavBar";
 import CatalogoContext from "./contexts/CatalogoContext";
 import BuscadorContext from "./contexts/BuscadorContext";
 import Modelo from "./components/Modelo";
+import banner from "./img/banner.gif";
+import Preview from "./components/Preview";
+
 
 const App = () => {
   const { productos } = useContext(CatalogoContext);
@@ -25,6 +28,7 @@ const App = () => {
   return (
     <>
       <NavBar />
+      <img src={banner} alt="banner"/>
       {buscar == null || String(buscar).length > 3 ? (
         carga.map(function (element, index) {
           return (
@@ -39,7 +43,7 @@ const App = () => {
           );
         })
       ) : (
-        <h1>error</h1>
+        <Preview/>
       )}
     </>
   );
