@@ -2,15 +2,19 @@ let catalogo = [];
 catalogo.push(
   {
     id: 0,
-    modelo: "Apple iPhone 12 128GB",
-    especificaciones: "Tamaño de la pantalla: 6.1 pulgadas, Cámara posterior: 12MP, Cámara frontal: 12MP, Batería: 2775 mAh",
+    modelo: "Apple iPhone 12",
+    especificaciones: `Tamaño de la pantalla: 6.1 pulgadas
+    Cámara: 12MP
+    Memoria: 128GB
+    Batería: 2775 mAh
+    Procesador: Apple A14 Bionic`,
     precio: "$3'829.000",
     categoria: "celulares",
     url: "https://falabella.scene7.com/is/image/FalabellaCO/9713518_1?wid=1500&hei=1500&qlt=70"
   },
   {
     id: 1,
-    modelo: "Motorola Edge 30 Neo 128GB"
+    modelo: "Motorola Edge 30 Neo 128GB",
     especificaciones: "Tamaño de la pantalla: 6.3 pulgadas, Cámara posterior: 13MP, Cámara frontal: 32MP, Batería: 4020 mAh",
     precio: "$1'587.900",
     categoria: "celulares",
