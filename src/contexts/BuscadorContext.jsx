@@ -2,7 +2,7 @@ import React, { createContext, useState } from "react";
 
 const BuscadorContext = createContext();
 const BuscadorProvider = function ({ children }) {
-  const [buscar, setBuscar] = useState(null);
+  const [buscar, setBuscar] = useState("");
   return (
     <BuscadorContext.Provider value={{ buscar, setBuscar }}>
       {children}
