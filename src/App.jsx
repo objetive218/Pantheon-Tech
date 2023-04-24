@@ -4,7 +4,7 @@ import NavBar from "./components/NavBar";
 import CatalogoContext from "./contexts/CatalogoContext";
 import BuscadorContext from "./contexts/BuscadorContext";
 import Modelo from "./components/Modelo";
-import banner from "./img/banner.gif";
+import banner from "./img/bannererror.gif";
 import Preview from "./components/Preview";
 
 
@@ -28,7 +28,7 @@ const App = () => {
   return (
     <>
       <NavBar />
-      <img src={banner} alt="banner"/>
+      <img src={banner} alt="imagen" />
       {buscar == null || String(buscar).length > 3 ? (
         carga.map(function (element, index) {
           return (
@@ -43,7 +43,7 @@ const App = () => {
           );
         })
       ) : (
-        <Preview/>
+        <Preview />
       )}
     </>
   );
