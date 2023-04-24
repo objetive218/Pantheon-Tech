@@ -1,23 +1,23 @@
 import React from "react";
-import categoria1 from "../img/categoriacelulares.svg";
-import categoria2 from "../img/categoriacomputador.svg";
-import categoria3 from "../img/categoriaconsola.svg";
-import categoria4 from "../img/categoriaaudio.svg";
+import categoriacelular from "../img/categoriacelulares.svg";
+import categoriacomputador from "../img/categoriacomputador.svg";
+import categoriaconsola from "../img/categoriaconsola.svg";
+import categoriaaudio from "../img/categoriaaudio.svg";
 
 const Preview = () => {
   return (
     <>
       <picture>
-        <img src={categoria1} alt="telefono" />
+        <img src={categoriacelular} alt="telefono" />
       </picture>
       <picture>
-        <img src={categoria2} alt="computador" />
+        <img src={categoriacomputador} alt="computador" />
       </picture>
       <picture>
-        <img src={categoria3} alt="consola" />
+        <img src={categoriaconsola} alt="consola" />
       </picture>
       <picture>
-        <img src={categoria4} alt="audio" />
+        <img src={categoriaaudio} alt="audio" />
       </picture>
     </>
   );
