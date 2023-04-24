@@ -33,17 +33,17 @@ const App = () => {
       {buscar == null || String(buscar).length > 3 ? (
         carga.map(function (element, index) {
           return (
-            <section><Modelo key = {index}
+            <Modelo key = {index}
               fuente={carga[index]?.url}
               modelo={carga[index]?.modelo}
               especificaciones={carga[index]?.especificaciones}
               precio={carga[index]?.precio}
               id={carga[index]?.id}
               elemento={carga[index]}
-            /></section>
+            />
           );
         })
-      ) : (
+      )  : (
         <section><Preview /></section>
       )}
     </section>
