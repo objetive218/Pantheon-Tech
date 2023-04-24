@@ -14,28 +14,42 @@ catalogo.push(
   },
   {
     id: 1,
-    modelo: "Motorola Edge 30 Neo 128GB",
-    especificaciones: "Tamaño de la pantalla: 6.3 pulgadas, Cámara posterior: 13MP, Cámara frontal: 32MP, Batería: 4020 mAh",
+    modelo: "Motorola Edge 30 Neo",
+    especificaciones: `Tamaño de la pantalla: 6.3 pulgadas
+    Cámara: 13MP
+    Memoria: 128GB
+    Batería: 4020 mAh
+    Procesador: Qualcomm Snapdragon 695`,
     precio: "$1'587.900",
     categoria: "celulares",
     url: "https://falabella.scene7.com/is/image/FalabellaCO/61899453_1?wid=1500&hei=1500&qlt=70",
   },
   {
     id: 2,
-    modelo: "Samsung Galaxy ZFlip3 256GB",
-    especificaciones: "Tamaño de la pantalla: 6.7 pulgadas, Cámara posterior: 12MP, Cámara frontal: 10MP, Batería: 3300 mAh",
+    modelo: "Samsung Galaxy ZFlip3",
+    especificaciones: `Tamaño de la pantalla: 6.7 pulgadas
+    Cámara: 12MP
+    Memoria: 256GB
+    Batería: 3300 mAh
+    Procesador: Snapdragon 888`,
     precio: "$3'177.900",
     categoria: "celulares",
     url: "https://falabella.scene7.com/is/image/FalabellaCO/gsc_117504291_1629796_1?wid=1500&hei=1500&qlt=70",
   },
   {
     id: 3,
-    modelo: "Xiaomi 11T Pro 256GB",
-    especificaciones: "Tamaño de la pantalla: 6.67 pulgadas, Cámara posterior: 108MP, Cámara frontal: 16MP, Batería: 5000 mAh",
+    modelo: "Xiaomi 11T Pro",
+    especificaciones: `Tamaño de la pantalla: 6.67 pulgadas
+    Cámara: 108MP
+    Memoria: 256GB
+    Batería: 5000 mAh
+    Procesador: Snapdragon 888`,
     precio: "$2'389.900",
     categoria: "celulares",
     url: "https://falabella.scene7.com/is/image/FalabellaCO/gsc_118192954_2008208_1?wid=1500&hei=1500&qlt=70"
-  },
+  })
+
+catalogo.push(
   {
     id: 4,
     modelo: "",
