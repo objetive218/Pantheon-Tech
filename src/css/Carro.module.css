@@ -1,0 +1,48 @@
+.forma{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  padding-left: 3.5rem;
+  gap: 1.2rem;
+  scroll-behavior: auto;
+  max-width: 60%;
+  max-height: 50%;
+}
+.checkout{ 
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  margin: 2rem 6rem 2rem 2rem;
+  padding: 1rem;
+  gap: 1rem;
+  width: 23%;
+  border: ridge #E90064;
+  border-radius: 1.5rem;
+}
+.tituloCar{
+  display: flex;
+  justify-content: center;
+}
+.botton1{
+  width: 8rem;
+  height: 2rem;
+  margin: 1rem;
+  border-radius: 2rem;
+  background-color: #060047;
+  color: white;
+  justify-content: center;
+}
+.all{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.title{
+  display: flex;
+  position: absolute;
+  bottom: 48rem;
+  right: 20rem;
+}

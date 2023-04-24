@@ -1,43 +1,50 @@
-
-
-
-.content-header {
-    background: #fff;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 99;
+.header {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.3rem;
 }
-.content-header header {
-    max-width: 1100px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
+.celulares{
+
 }
 
-.content-header header ul {
-    font-family: 'Inter Tight';
-    font-weight: 600;
-    font-style: inherit;
-    color: #E90064;
-   display: flex;
-   list-style: none; 
+.celulares :hover {
+  transform: scale(1.2);
 }
-.content-header header nav ul li a {
-    text-align: none;
-    color: #E90064;
-    margin: 0 15px;
-    padding: 3px;
-    transition: .5s;
-    text-decoration: none;
-}
-.content-header header nav ul li a:hover {
-    color: #060047;
-}
+.computadores {
 
-.content-header header nav img {
+}
+.computadores :hover {
+  transform: scale(1.2);
+}
+.consolas {
 
+}
+.consolas :hover{
+  transform: scale(1.2);
+}
+.audio{
+
+}
+.audio :hover{
+  transform: scale(1.2);
+}
+.logo {
+  color: #e90064;
+  font-size: 2rem;
+}
+.carrito {
+  color: #e90064;
+  font-size: 2rem;
+}
+.buscar{
+    color:#e90064;
+    font-size: 1rem;
 }
