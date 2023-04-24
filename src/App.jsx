@@ -27,24 +27,27 @@ const App = () => {
 
   return (
     <>
-      <NavBar />
-      <img src={banner} alt="imagen" />
+<NavBar />
+    <section>
+      <img className="" src={banner} alt="imagen" />
       {buscar == null || String(buscar).length > 3 ? (
         carga.map(function (element, index) {
           return (
-            <Modelo key = {index}
+            <section><Modelo key = {index}
               fuente={carga[index]?.url}
               modelo={carga[index]?.modelo}
               especificaciones={carga[index]?.especificaciones}
               precio={carga[index]?.precio}
               id={carga[index]?.id}
               elemento={carga[index]}
-            />
+            /></section>
           );
         })
       ) : (
-        <Preview />
+        <section><Preview /></section>
       )}
+    </section>
+      
     </>
   );
 };
