@@ -6,6 +6,7 @@ import Modelo from "./components/Modelo";
 import banner from "./img/bannererror.gif";
 import Preview from "./components/Preview";
 import StyleApp from "./css/App.module.css";
+import Footer from "./components/Footer";
 
 const App = () => {
   const { productos } = useContext(CatalogoContext);
@@ -50,6 +51,7 @@ const App = () => {
         ) : (
           <Preview />
         )}
+        <Footer/>
     </>
   );
 };
