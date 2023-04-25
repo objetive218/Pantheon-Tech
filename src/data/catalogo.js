@@ -8,7 +8,7 @@ catalogo.push(
     Memoria: 128GB
     Batería: 2775 mAh
     Procesador: Apple A14 Bionic`,
-    precio: "$3'829.000",
+    precio: 3829000,
     categoria: "celulares",
     url: "https://falabella.scene7.com/is/image/FalabellaCO/9713518_1?wid=1500&hei=1500&qlt=70"
   },
@@ -20,7 +20,7 @@ catalogo.push(
     Memoria: 128GB
     Batería: 4020 mAh
     Procesador: Qualcomm Snapdragon 695`,
-    precio: "$1'587.900",
+    precio: 1587900,
     categoria: "celulares",
     url: "https://falabella.scene7.com/is/image/FalabellaCO/61899453_1?wid=1500&hei=1500&qlt=70",
   },
@@ -32,7 +32,7 @@ catalogo.push(
     Memoria: 256GB
     Batería: 3300 mAh
     Procesador: Snapdragon 888`,
-    precio: "$3'177.900",
+    precio: 3177900,
     categoria: "celulares",
     url: "https://falabella.scene7.com/is/image/FalabellaCO/gsc_117504291_1629796_1?wid=1500&hei=1500&qlt=70",
   },
@@ -44,7 +44,7 @@ catalogo.push(
     Memoria: 256GB
     Batería: 5000 mAh
     Procesador: Snapdragon 888`,
-    precio: "$2'389.900",
+    precio: 2389900,
     categoria: "celulares",
     url: "https://falabella.scene7.com/is/image/FalabellaCO/gsc_118192954_2008208_1?wid=1500&hei=1500&qlt=70"
   })
