@@ -1,0 +1,12 @@
+.articulos{
+ display: flex;
+ flex-direction: row;
+}
+.celuco{
+ display: flex;
+ padding-top: 8rem;
+ max-width: 50%;
+position: relative;
+left: 40rem;
+margin-bottom: 2rem;
+}

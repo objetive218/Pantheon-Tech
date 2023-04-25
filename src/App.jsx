@@ -3,10 +3,10 @@ import React, { useContext, useState, useEffect } from "react";
 import NavBar from "./components/NavBar";
 import CatalogoContext from "./contexts/CatalogoContext";
 import BuscadorContext from "./contexts/BuscadorContext";
-import Modelo from "./components/Modelo";
+import ModeloBuscar from "./components/Modelo";
 import banner from "./img/bannererror.gif";
 import Preview from "./components/Preview";
-
+import StyleApp from "./css/App.module.css"
 
 const App = () => {
   const { productos } = useContext(CatalogoContext);
@@ -28,12 +28,15 @@ const App = () => {
   return (
     <>
 <NavBar />
-    <section>
-      <img className="" src={banner} alt="imagen" />
+    <section className={StyleApp.all}>
+      <picture className={StyleApp.imagen}>
+
+      <img className={StyleApp.img1} src={banner} alt="imagen" />
+      </picture>
       {buscar == null || String(buscar).length > 3 ? (
         carga.map(function (element, index) {
           return (
-            <Modelo key = {index}
+            <ModeloBuscar key = {index}
               fuente={carga[index]?.url}
               modelo={carga[index]?.modelo}
               especificaciones={carga[index]?.especificaciones}
@@ -44,7 +47,7 @@ const App = () => {
           );
         })
       )  : (
-        <section><Preview /></section>
+        <Preview />
       )}
     </section>
       

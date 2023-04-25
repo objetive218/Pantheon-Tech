@@ -1,13 +1,13 @@
 import React, { useContext } from "react";
-import modeloStyle from "../css/Modelo.module.css";
+import modeloStyle from "../css/ModeloBuscar.module.css";
 import CarritoContext from "../contexts/CarritoContext";
 import Borde from "../img/borde.svg"
 
-const Modelo = (props) => {
+const ModeloBuscar = (props) => {
   const { eliminarModel, addModel } = useContext(CarritoContext);
   return (
     <>
-      <section className={modeloStyle.modelo}>
+      <section >
         <img className={modeloStyle.bordecito} src={Borde} alt="BordeArticulo"/>
         <img
           className={modeloStyle.image}
@@ -40,4 +40,4 @@ const Modelo = (props) => {
   );
 };
 
-export default Modelo;
+export default ModeloBuscar;
