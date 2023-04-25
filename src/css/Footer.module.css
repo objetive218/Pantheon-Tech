@@ -27,7 +27,7 @@ header{
     margin-top: 20px;
 }
 
-.container__article{
+.containerarticle{
     max-width: 1000px;
     padding: 0px 20px;
     margin: auto;
@@ -37,7 +37,7 @@ header{
     justify-content: center;
 }
 
-.container__article .box__article{
+.containerarticle .boxarticle{
     width: 200px;
     height: 250px;
     background: var(--color-esqueleto);
@@ -59,7 +59,7 @@ footer{
     mask-size: cover;*/
 }
 
-.container__footer{
+.containerfooter{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -68,17 +68,17 @@ footer{
     margin-top: 100px;
 }
 
-.box__footer{
+.boxfooter{
     display: flex;
     flex-direction: column;
     padding: 40px;
 }
 
-.box__footer .logo img{
+.boxfooter .logo img{
     width: 180px;
 }
 
-.box__footer .terms{
+.boxfooter .terms{
     max-width: 350px;
     margin-top: 20px;
     font-weight: 500;
@@ -86,39 +86,39 @@ footer{
     font-size: 18px;
 }
 
-.box__footer h2{
+.boxfooter h2{
     margin-bottom: 30px;
     color: #343434;
     font-weight: 700;
 }
 
-.box__footer a{
+.boxfooter a{
     margin-top: 10px;
     color: #7a7a7a;
     font-weight: 600;
 }
 
-.box__footer a:hover{
+.boxfooter a:hover{
     opacity: 0.8;
 }
 
-.box__footer a .fab{
+.boxfooter a .fab{
     font-size: 20px;
 }
 
-.box__copyright{
+.boxcopyright{
     max-width: 1200px;
     margin: auto;
     text-align: center;
     padding: 0px 40px;
 }
 
-.box__copyright p{
+.boxcopyright p{
     margin-top: 20px;
     color: #E90064;
 }
 
-.box__copyright hr{
+.boxcopyright hr{
     border: none;
     height: 1px;
     background-color: #060047;
