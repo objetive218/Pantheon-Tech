@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect } from "react";
 import NavBar from "./components/NavBar";
 import CatalogoContext from "./contexts/CatalogoContext";
 import BuscadorContext from "./contexts/BuscadorContext";
-import ModeloBuscar from "./components/ModeloBuscar";
+import Modelo from "./components/Modelo";
 import banner from "./img/bannererror.gif";
 import Preview from "./components/Preview";
 import StyleApp from "./css/App.module.css";
@@ -10,10 +10,10 @@ import StyleApp from "./css/App.module.css";
 const App = () => {
   const { productos } = useContext(CatalogoContext);
   const { buscar } = useContext(BuscadorContext);
-  const [carga1, setCarga1] = useState([]);
+  const [carga, setCarga] = useState([]);
   useEffect(
     function () {
-      setCarga1(
+      setCarga(
         productos.filter(function (item) {
           return String(item.modelo)
             .toLowerCase()
@@ -34,16 +34,16 @@ const App = () => {
         )}
 
         {buscar == null || String(buscar).length > 3 ? (
-          carga1.map(function (element, index) {
+          carga.map(function (element, index) {
             return (
-              <ModeloBuscar
+              <Modelo
                 key={index}
-                fuente={carga1[index]?.url}
-                modelo={carga1[index]?.modelo}
-                especificaciones={carga1[index]?.especificaciones}
-                precio={carga1[index]?.precio}
-                id={carga1[index]?.id}
-                elemento={carga1[index]}
+                fuente={carga[index]?.url}
+                modelo={carga[index]?.modelo}
+                especificaciones={carga[index]?.especificaciones}
+                precio={carga[index]?.precio}
+                id={carga[index]?.id}
+                elemento={carga[index]}
               />
             );
           })
