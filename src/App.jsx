@@ -29,7 +29,10 @@ const App = () => {
     <>
 <NavBar />
     <section>
-      <img className={StyleApp.imagen} src={banner} alt="imagen" />
+      <picture className={StyleApp.imagen}>
+
+      <img className={StyleApp.img1} src={banner} alt="imagen" />
+      </picture>
       {buscar == null || String(buscar).length > 3 ? (
         carga.map(function (element, index) {
           return (
@@ -44,7 +47,7 @@ const App = () => {
           );
         })
       )  : (
-        <section><Preview /></section>
+        <Preview />
       )}
     </section>
       
