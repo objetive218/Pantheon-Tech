@@ -11,6 +11,7 @@ import Login from "./components/Login";
 import Carro from "./components/Carro";
 import { CatalogoProvider } from "./contexts/CatalogoContext";
 import { BuscadorProvider } from "./contexts/BuscadorContext";
+import { LoginProvider } from "./contexts/LoginContext";
 
 const router = createBrowserRouter([
   {
@@ -45,12 +46,14 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BuscadorProvider>
-      <CatalogoProvider>
-        <CarritoProvider>
-          <RouterProvider router={router} />
-        </CarritoProvider>
-      </CatalogoProvider>
-    </BuscadorProvider>
+    <LoginProvider>
+      <BuscadorProvider>
+        <CatalogoProvider>
+          <CarritoProvider>
+            <RouterProvider router={router} />
+          </CarritoProvider>
+        </CatalogoProvider>
+      </BuscadorProvider>
+    </LoginProvider>
   </React.StrictMode>
 );
