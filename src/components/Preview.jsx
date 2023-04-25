@@ -9,17 +9,17 @@ const Preview = () => {
   return (
     <>
     <section className={StylePreview.caja}>
-      <picture>
-        <img className={StylePreview.celu} src={categoriacelular} alt="telefono" />
+      <picture className={StylePreview.celu} >
+        <img src={categoriacelular} alt="telefono" />
       </picture>
-      <picture>
-        <img className={StylePreview.compu} src={categoriacomputador} alt="computador" />
+      <picture className={StylePreview.compu}>
+        <img  src={categoriacomputador} alt="computador" />
       </picture>
-      <picture>
-        <img className={StylePreview.nintendo}  src={categoriaconsola} alt="consola" />
+      <picture className={StylePreview.nintendo}>
+        <img   src={categoriaconsola} alt="consola" />
       </picture>
-      <picture>
-        <img className={StylePreview.audif}  src={categoriaaudio} alt="audio" />
+      <picture className={StylePreview.audif}>
+        <img   src={categoriaaudio} alt="audio" />
       </picture>
     </section>
     </>
