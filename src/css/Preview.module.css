@@ -6,16 +6,14 @@
  height: 80%;
  justify-items: center;
  margin-top: 2rem;
+ position: relative;
+ bottom: -20rem;
 }
 .celu{
  grid-column: 1/2;
  grid-row: 1/2;
  max-width: 70%;
  max-height: 70%;
- display: flex;
- justify-content: center;
- align-items: center;
- align-self: center;
 }
 .compu{
  grid-column: 2/3;
