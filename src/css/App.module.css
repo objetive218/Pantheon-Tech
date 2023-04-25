@@ -1,17 +1,9 @@
 .imagen{
- padding-top: 7rem;
- width: 100%;
- height: 100%;
+ width: 100vw;
  display: flex;
- position: fixed;
-    top: -10rem;
-    left: 0;
-    bottom: 20rem;
 }
 .img1{
-
-
+    object-fit: cover;
 }
 .all{
-    position: fixed;
 }

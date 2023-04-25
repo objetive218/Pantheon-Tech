@@ -6,9 +6,6 @@
   height: 80%;
   justify-items: center;
   margin-top: 2rem;
-  position: relative;
-  bottom: -8rem;
-  right: 27rem;
 }
 .celu {
   grid-column: 1/2;

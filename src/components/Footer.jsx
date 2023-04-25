@@ -1,5 +1,7 @@
 import Footerstyle from "../css/Footer.module.css"
 
+import React from 'react'
+
 const Footer = () => {
     return <section className="container__footer">
         <section className="box__footer">

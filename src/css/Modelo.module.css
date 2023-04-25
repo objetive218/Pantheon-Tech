@@ -3,6 +3,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  height: 70vh;
 }
 .image{
   width: 50%;
@@ -14,7 +16,7 @@
   text-align: center;
 }
 .bordecito{
-/*no se que hacer*/
+  position: absolute;
 }
 .caracteristica{
 text-align: center;
