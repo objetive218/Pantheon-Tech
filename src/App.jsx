@@ -6,7 +6,7 @@ import BuscadorContext from "./contexts/BuscadorContext";
 import Modelo from "./components/Modelo";
 import banner from "./img/bannererror.gif";
 import Preview from "./components/Preview";
-
+import StyleApp from "./css/App.module.css"
 
 const App = () => {
   const { productos } = useContext(CatalogoContext);
@@ -29,7 +29,7 @@ const App = () => {
     <>
 <NavBar />
     <section>
-      <img className="" src={banner} alt="imagen" />
+      <img className={StyleApp.imagen} src={banner} alt="imagen" />
       {buscar == null || String(buscar).length > 3 ? (
         carga.map(function (element, index) {
           return (
