@@ -1,22 +1,24 @@
 import React, { useContext } from "react";
-import modeloStyle from "../css/ModeloBuscar.module.css";
+import modeloStyle1 from "../css/ModeloBuscar.module.css";
 import CarritoContext from "../contexts/CarritoContext";
-import Borde from "../img/borde.svg"
+import Borde from "../img/borde.svg";
 
 const ModeloBuscar = (props) => {
   const { eliminarModel, addModel } = useContext(CarritoContext);
   return (
     <>
-      <section >
-        <img className={modeloStyle.bordecito} src={Borde} alt="BordeArticulo"/>
+      <section className={modeloStyle1.modelo}>
+        <img className={modeloStyle1.borde} src={Borde} alt="BordeArticulo" />
         <img
-          className={modeloStyle.image}
+          className={modeloStyle1.imag}
           src={props.fuente}
           alt="imagen modelo"
         />
-        <h2 className={modeloStyle.nombre} >{props.modelo}</h2>
-        <p className={modeloStyle.caracteristica}>{props.especificaciones}</p>
-        <p className={modeloStyle.valor}>{props.precio}</p>
+        <article className={modeloStyle1.caracter}>
+          <h2>{props.modelo}</h2>
+          <p>{props.especificaciones}</p>
+          <p>{props.precio}</p>
+        </article>
         <form action="#">
           <button
             type="button"
