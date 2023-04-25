@@ -10,16 +10,16 @@ const Preview = () => {
     <>
     <section className={StylePreview.caja}>
       <picture>
-        <img src={categoriacelular} alt="telefono" />
+        <img className={StylePreview.celu} src={categoriacelular} alt="telefono" />
       </picture>
       <picture>
-        <img src={categoriacomputador} alt="computador" />
+        <img className={StylePreview.compu} src={categoriacomputador} alt="computador" />
       </picture>
       <picture>
-        <img src={categoriaconsola} alt="consola" />
+        <img className={StylePreview.nintendo}  src={categoriaconsola} alt="consola" />
       </picture>
       <picture>
-        <img src={categoriaaudio} alt="audio" />
+        <img className={StylePreview.audif}  src={categoriaaudio} alt="audio" />
       </picture>
     </section>
     </>

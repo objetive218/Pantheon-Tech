@@ -1,3 +1,29 @@
 .caja{
- display: flex;
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+ grid-template-rows: 1fr ;
+}
+.celu{
+ grid-column: 1/2;
+ grid-row: 1/2;
+ max-width: 75%;
+ max-height: 75%;
+}
+.compu{
+ grid-column: 2/3;
+ grid-row: 1/2;
+ max-width: 75%;
+ max-height: 75%;
+}
+.nintendo{
+ grid-column: 3/4;
+ grid-row: 1/2;
+ max-width: 75%;
+ max-height: 75%;
+}
+.audif{
+ grid-column: 4/5;
+ grid-row: 1/2;
+ max-width: 75%;
+ max-height: 75%;
 }
