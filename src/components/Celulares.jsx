@@ -3,6 +3,7 @@ import Modelo from "./Modelo";
 import CatalogoContext from "../contexts/CatalogoContext";
 import NavBar from "./NavBar"
 import CelularesTitle from "../img/celulares.svg";
+import StyleCelulares from "../css/Celulares.module.css"
 
 const Celulares = () => {
   const { productos} = useContext(CatalogoContext);
@@ -20,7 +21,8 @@ const Celulares = () => {
   return (
     <>
     <NavBar />
-    <img src={CelularesTitle} alt="logo" />
+    <img className={StyleCelulares.celuco} src={CelularesTitle} alt="logo" />
+    <section className={StyleCelulares.articulos}>
       {cel != null
         ? cel.map(function (element, index) {
             return (
@@ -35,6 +37,7 @@ const Celulares = () => {
             );
           })
         : ""}
+    </section>
     </>
   );
 };
