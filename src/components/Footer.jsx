@@ -20,7 +20,10 @@ const Footer = () => {
                     <section className={`${FooterStyle.boxfooter}`}>
                         <h2>Términos y Condiciones</h2>
                         {!isClicked && (
-                            <button onClick={}
+                            <button onClick={() => setIsClicked(true)}>Ver más</button>
+                        )}
+                        {isClicked && (
+                            <a href="/terminos-y-condiciones">Leer términos y condiciones</a>
                         )}
                     </section>
                     <h2>Redes Sociales</h2>
@@ -40,4 +43,6 @@ const Footer = () => {
         </section>
     </section>
     
-} 
+}
+
+
