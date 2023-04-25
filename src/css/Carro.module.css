@@ -5,7 +5,7 @@
   right: 2rem;
   left: 0;
   bottom: 0;
-  top: 18rem;
+  top: 10rem;
   gap: 1.2rem;
   scroll-behavior: auto;
 }
@@ -17,6 +17,7 @@
   padding: 1rem;
   gap: 1rem;
   width: 23%;
+  height: 50%;
   border: ridge #E90064;
   border-radius: 1.5rem;
   top: 10rem;
