@@ -1,4 +1,6 @@
 import FooterStyle from "../css/Footer.module.css";
+import Logo from "../img/logo.svg"
+import { Link } from "react-router-dom";
 
 import React, { useState } from "react";
 
@@ -7,8 +9,8 @@ const Footer = () => {
   return (
     <section className={`${FooterStyle.containerFooter}`}>
       <section className={`${FooterStyle.boxfooter}`}>
-        <section className={`${FooterStyle.logo}`}>
-          <img src="img/" alt="logo" />
+        <picture className={`${FooterStyle.logo}`}>
+          <img src={Logo} alt="logo" /> </picture>
           <section className={`${FooterStyle.terms}`}>
             <h3>Misión:</h3>
             <p>
@@ -36,19 +38,7 @@ const Footer = () => {
                 </a>
               )}
             </section>
-            <h2>Redes Sociales</h2>
-            <a href="">
-              <i className="fab fa-facebook"></i> Facebook
-            </a>
-            <a href="">
-              <i className="fab fa-twitter"></i> Twitter
-            </a>
-            <a href="">
-              <i className="fab fa-linkedin"></i> Linkedin
-            </a>
-            <a href="">
-              <i className="fab fa-instagram"></i> Instagram
-            </a>
+            <h2>Contacto</h2>
             <a href="">
               <i className="fab fa-envelope"></i> pantheontech@gmail.com
             </a>
@@ -61,7 +51,6 @@ const Footer = () => {
           </section>
         </section>
       </section>
-    </section>
   );
 };
 
