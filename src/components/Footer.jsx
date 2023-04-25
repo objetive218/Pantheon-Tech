@@ -1,8 +1,11 @@
 import FooterStyle from "../css/Footer.module.css"
 
-import React from 'react'
+import React, { useState } from 'react'
 
 const Footer = () => {
+    function Footer (){
+        const [isClicked, setIsClicked] = useState(false);
+    }
     return <section className={`${FooterStyle.containerFooter}`}>
         <section className={`${FooterStyle.boxfooter}`}>
             <section className={`${FooterStyle.logo}`}>
@@ -20,7 +23,7 @@ const Footer = () => {
                     <section className={`${FooterStyle.boxfooter}`}>
                         <h2>Términos y Condiciones</h2>
                         {!isClicked && (
-                            <button onClick={() => setIsClicked(true)}>Ver más</button>
+                            <button onClick={() => setIsClicked(!isClicked)}>Ver más</button>
                         )}
                         {isClicked && (
                             <a href="/terminos-y-condiciones">Leer términos y condiciones</a>
