@@ -1,6 +1,6 @@
 import FooterStyle from "../css/Footer.module.css";
 import Logo from "../img/logo.svg";
-
+import { Link } from "react-router-dom";
 
 
 import React, { useState } from "react";
@@ -13,20 +13,10 @@ const Footer = () => {
         <picture className={`${FooterStyle.logo}`}>
           <img src={Logo} alt="logo" /> </picture>
           <section className={`${FooterStyle.terms}`}>
-            <h3>Misión:</h3>
-            <p>
-              Pantheon Tech es una empresa dedicada a la distribución,
-              comercialización, y venta de equipos y partes de computo,
-              portátiles, videojuegos, consolas, y lo referente con productos
-              tecnológicos.
-            </p>
-            <h3>Visión:</h3>
-            <p>
-              Seremos la principal empresa en importación y distribución de
-              tecnología, ampliaremos nuestra infraestructura a nivel nacional
-              para ofrecer una mejor cobertura y mejorar el servicio al cliente.
-            </p>
             <section className={`${FooterStyle.boxfooter}`}>
+            <Link to="/nosotros">
+                  ¿Quiénes somos?
+                </Link>
               <h2>Términos y Condiciones</h2>
               {!isClicked && (
                 <button onClick={() => setIsClicked(!isClicked)}>
@@ -34,9 +24,9 @@ const Footer = () => {
                 </button>
               )}
               {isClicked && (
-                <a href="/terminos-y-condiciones">
+                <Link to="/terminos">
                   Leer términos y condiciones
-                </a>
+                </Link>
               )}
             </section>
             <h2>Contacto</h2>
