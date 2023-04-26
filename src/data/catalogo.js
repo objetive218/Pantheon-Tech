@@ -90,13 +90,13 @@ catalogo.push(
     id: 7,
     modelo: "HP Victus",
     especificaciones: `Procesador:AMD RYZEN R5
-    RAM:16GB
+    RAM:8GB
     Disco:512GB
     tarjeta de video:NVIDIA GEFORCE RTX 3050
     Resolución: FullHD`,
     precio:3999900,
     categoria: "computadores",
-    url: "https://falabella.scene7.com/is/image/FalabellaCO/55903812_1?wid=1500&hei=1500&qlt=70",
+    url: "https://panamericana.vtexassets.com/arquivos/ids/488144-800-auto?v=638146688731300000&width=800&height=auto&aspect=true",
   }
 );
 catalogo.push(
