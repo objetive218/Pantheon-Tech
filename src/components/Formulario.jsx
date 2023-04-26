@@ -13,7 +13,7 @@ const Formulario = () => {
 
   const handleSubmit = (event) => {
       event.preventDefault();
-      console.log({nombre, caracteristicas, categoria, precio, imagen});
+      console.log({nombre, caracteristicas, categoria, precio, imagen})}
   return (
     <form onSubmit={handleSubmit} className={`${FormularioStyle.form}`}>
       <label htmlFor='nombre'className={`${FormularioStyle.label}`}>
@@ -82,7 +82,7 @@ const Formulario = () => {
             </form>
     
   )
-}}
+}
 
             
 export default Formulario
