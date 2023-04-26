@@ -15,7 +15,17 @@ const LoginProvider = function({children}){
         setUsuario(null)
     }
   }
-  return <LoginContext.Provider value={{usuario, setUsuario, logeo}}>
+  const logout = function(){
+    setUsuario(null)
+  }
+  const esAdmin = function(){
+    if(usuario != null && usuario.roll == "administrador"){
+      return true;
+    }
+      return false;
+  };
+
+  return <LoginContext.Provider value={{usuario, setUsuario, logeo, logout, esAdmin}}>
     {children}
   </LoginContext.Provider>
 }
