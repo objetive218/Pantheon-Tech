@@ -6,9 +6,16 @@ const LoginProvider = function({children}){
   const [usuario, setUsuario] = useState(null)
   const {data} = useContext(UserDataContext);
   const logeo = function(usuario, password){
-    const registrado = data.find()
+    const registrado = data.find(function(usuario){
+      return usuario.username == username;
+    });
+    if(registrado != undefined && registrado.password == password){
+      setUsuario(registrado)
+    }else {
+        setUsuario(null)
+    }
   }
-  return <LoginContext.Provider value={{usuario, setUsuario}}>
+  return <LoginContext.Provider value={{usuario, setUsuario, logeo}}>
     {children}
   </LoginContext.Provider>
 }
