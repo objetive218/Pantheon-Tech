@@ -1,7 +1,10 @@
 import React from 'react'
+import NavBar from './NavBar'
 
 const QuienesSomos = () => {
   return (
+    <>
+    <NavBar/>
    <article>
     <h2>¿Quienes Somos?</h2>
     <p>Somos una empresa comercializadora de articulos tecnologicos a nivel nacional, con el objetivo de brindar los mejores precios del mercado en Colombia.</p>
@@ -19,6 +22,7 @@ const QuienesSomos = () => {
     para ofrecer una mejor cobertura y mejorar el servicio al cliente.
     </p>
     </article>
+    </>
   )
 }
 
