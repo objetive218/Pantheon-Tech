@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Audio = () => {
+const AudioP = () => {
   return (
     <div>Audio</div>
   )
 }
 
-export default Audio
+export default AudioP
