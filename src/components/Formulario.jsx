@@ -15,16 +15,16 @@ const Formulario = () => {
       event.preventDefault();
       console.log({nombre, caracteristicas, categoria, precio, imagen});
   return (
-    <form onSubmit={handleSubmit} className='form'>
-      <label htmlFor='nombre'className='label'>
+    <form onSubmit={handleSubmit} className={`${FormularioStyle.form}`}>
+      <label htmlFor='nombre'className={`${FormularioStyle.label}`}>
       Nombre del artículo:</label>
       <input type='text' id='nombre' name='nombre' value={nombre}
       onChange={(event) => setNombre(event.target.value)}
       required
-      className='input'
+      className={`${FormularioStyle.input}`}
       />
       
-      <label htmlFor='caracteristicas' className='label'>
+      <label htmlFor='caracteristicas' className={`${FormularioStyle.label}`}>
       Características:</label>
       <textarea
       id='características'
@@ -36,17 +36,17 @@ const Formulario = () => {
             Memoria: 128GB
             Batería: 5000mAH'
             required
-            className='input'
+            className={`${FormularioStyle.input}`}
             />
             
-            <label htmlFor='categoria' className='label'>Categoría:</label>
+            <label htmlFor='categoria' className={`${FormularioStyle.label}`}>Categoría:</label>
             <select
             id='categoria'
             name='categoria'
             value={categoria}
             onChange={(event) => setCategoria(event.target.value)}
             required
-            className='input'
+            className={`${FormularioStyle.input}`}
             >
             <option value="">Selecciona una opción</option>
             <option value="celulares">Celulares</option>
@@ -56,7 +56,7 @@ const Formulario = () => {
             <option value="audio">Audio</option>
             </select>
             
-            <label htmlFor='precio' className='label'>Precio COP:</label>
+            <label htmlFor='precio' className={`${FormularioStyle.label}`}>Precio COP:</label>
             <input
             type='number'
             id='precio'
@@ -64,10 +64,10 @@ const Formulario = () => {
             value={precio}
             onChange={(event) => setPrecio(event.target.value)}
             required
-            className='input'
+            className={`${FormularioStyle.input}`}
             />
             
-            <label htmlFor='imagen' className='label'>URL de la imagen:</label>
+            <label htmlFor='imagen' className={`${FormularioStyle.label}`}>URL de la imagen:</label>
             <input
             type='url'
             id='imagen'
@@ -75,10 +75,10 @@ const Formulario = () => {
             value={imagen}
             onChange={(event) => setImagen(event.target.value)}
             required
-            className='input'
+            className={`${FormularioStyle.input}`}
             />
             
-            <button type='submit' className='button'>Enviar</button>
+            <button type='submit' className={`${FormularioStyle.button}`}>Enviar</button>
             </form>
     
   )
