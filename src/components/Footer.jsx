@@ -1,5 +1,6 @@
 import FooterStyle from "../css/Footer.module.css";
-import Logo from "../img/logo.svg"
+import Logo from "../img/logo.svg";
+
 
 
 import React, { useState } from "react";

@@ -52,11 +52,51 @@ catalogo.push(
 catalogo.push(
   {
     id: 4,
-    modelo: "",
-    especificaciones: "",
-    precio: "",
+    modelo: "Acer Nitro",
+    especificaciones: `Procesador:Intel Core i5
+    RAM:8GB
+    Disco:512GB
+    tarjeta de video:NVIDIA GEFORCE RTX 3050
+    Resolución: FullHD`,
+    precio:3349900,
     categoria: "computadores",
-    url: "",
+    url: "https://falabella.scene7.com/is/image/FalabellaCO/62830684_1?wid=1500&hei=1500&qlt=70",
+  },
+  {
+    id: 5,
+    modelo: "Asus TUF A15",
+    especificaciones: `Procesador:AMD RYZEN R5
+    RAM:8GB
+    Disco:512GB
+    tarjeta de video:NVIDIA GEFORCE GTX 1650
+    Resolución: FullHD`,
+    precio:3199900,
+    categoria: "computadores",
+    url: "https://falabella.scene7.com/is/image/FalabellaCO/43948892_1?wid=1500&hei=1500&qlt=70",
+  },
+  {
+    id: 6,
+    modelo: "Asus ROG Strix G15",
+    especificaciones: `Procesador:AMD RYZEN R7
+    RAM:32GB
+    Disco:512GB
+    tarjeta de video:NVIDIA GEFORCE RTX 3050
+    Resolución: FullHD`,
+    precio: 6779900,
+    categoria: "computadores",
+    url: "https://falabella.scene7.com/is/image/FalabellaCO/43948893_1?wid=1500&hei=1500&qlt=70",
+  },
+  {
+    id: 7,
+    modelo: "HP Victus",
+    especificaciones: `Procesador:AMD RYZEN R5
+    RAM:16GB
+    Disco:512GB
+    tarjeta de video:NVIDIA GEFORCE RTX 3050
+    Resolución: FullHD`,
+    precio:3999900,
+    categoria: "computadores",
+    url: "https://falabella.scene7.com/is/image/FalabellaCO/55903812_1?wid=1500&hei=1500&qlt=70",
   }
 );
 
