@@ -13,6 +13,9 @@ import { CatalogoProvider } from "./contexts/CatalogoContext";
 import { BuscadorProvider } from "./contexts/BuscadorContext";
 import { LoginProvider } from "./contexts/LoginContext";
 import { UserDataProvider } from "./contexts/UserDataContext";
+import Formulario from "./components/Formulario";
+import Terminos from "./components/Terminos";
+import QuienesSomos from "./components/QuienesSomos";
 
 const router = createBrowserRouter([
   {
@@ -42,6 +45,18 @@ const router = createBrowserRouter([
   {
     path: "/carro",
     element: <Carro />,
+  },
+  {
+    path: "/formulario",
+    element: <Formulario />,
+  },
+  {
+    path: "/terminos",
+    element: <Terminos />,
+  },
+  {
+    path: "/nosotros",
+    element: <QuienesSomos />,
   },
 ]);
 
