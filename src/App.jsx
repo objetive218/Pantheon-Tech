@@ -7,6 +7,7 @@ import banner from "./img/bannererror.gif";
 import Preview from "./components/Preview";
 import StyleApp from "./css/App.module.css";
 import Footer from "./components/Footer";
+import { Link } from "react-router-dom";
 
 const App = () => {
   const { productos } = useContext(CatalogoContext);
@@ -51,6 +52,9 @@ const App = () => {
         ) : (
           <Preview />
         )}
+        <Link to="/formulario">
+        formulario
+      </Link>
         <Footer/>
     </>
   );
