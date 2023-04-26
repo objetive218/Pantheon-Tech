@@ -25,7 +25,7 @@ const Footer = () => {
               )}
               {isClicked && (
                 <Link to="/terminos">
-                  Leer términos y condiciones
+                  Términos y condiciones
                 </Link>
               )}
             </section>
