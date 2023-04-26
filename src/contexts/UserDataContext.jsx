@@ -7,7 +7,7 @@ const UserDataProvider = function({children}){
   const register = function (username, password, roll) {
     setUsers([...users, { username, password, roll }]);
   };
-  return <UserDataContext.Provider value={data,setData, register}>
+  return <UserDataContext.Provider value={{data,setData, register}}>
     {children}
   </UserDataContext.Provider>
 }
