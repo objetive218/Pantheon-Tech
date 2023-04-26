@@ -29,7 +29,7 @@ const Formulario = () => {
       <textarea
       id='características'
       name='características'
-      value={características}
+      value={caracteristicas}
       onChange={(event) => setCaracteristicas(event.target.value)}
       placeholder='Ingrese acá las siguientes características:
             Cámara: 50MP
