@@ -16,6 +16,7 @@ import { UserDataProvider } from "./contexts/UserDataContext";
 import Formulario from "./components/Formulario";
 import Terminos from "./components/Terminos";
 import QuienesSomos from "./components/QuienesSomos";
+import AudioP from "./components/AudioP";
 
 const router = createBrowserRouter([
   {
@@ -36,7 +37,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/audio",
-    element: <Audio />,
+    element: <AudioP />,
   },
   {
     path: "/login",
