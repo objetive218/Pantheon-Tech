@@ -6,8 +6,8 @@ const LoginProvider = function({children}){
   const [usuario, setUsuario] = useState(null)
   const {data} = useContext(UserDataContext);
   const logeo = function(usuario, password){
-    const registrado = data.find(function(usuario){
-      return usuario.username == username;
+    const registrado = data.find(function(user){
+      return user.username == usuario;
     });
     if(registrado != undefined && registrado.password == password){
       setUsuario(registrado)
@@ -19,7 +19,7 @@ const LoginProvider = function({children}){
     setUsuario(null)
   }
   const esAdmin = function(){
-    if(usuario != null && usuario.roll == "administrador"){
+    if(usuario != null && user.roll == "administrador"){
       return true;
     }
       return false;
