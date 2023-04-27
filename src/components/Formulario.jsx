@@ -1,15 +1,17 @@
-import React,{useState} from 'react';
+import React,{useState,useContext} from 'react';
 
 import FormularioStyle from "../css/Formulario.module.css"
 
 
 
 const Formulario = () => {
+  const {productos} = useContext(CatalogoContext)
   const [nombre, setNombre] = useState("");
   const [caracteristicas, setCaracteristicas] = useState("");
   const [categoria, setCategoria] = useState("");
   const [precio, setPrecio] = useState("");
   const [imagen, setImagen] = useState("");
+  const [prodAdd, setProAdd] = useState({});
 
   const handleSubmit = (event) => {
       event.preventDefault();
