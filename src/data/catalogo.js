@@ -159,7 +159,7 @@ catalogo.push(
       Conectividad: 3.5mm
       Incluye micrófono: Sí`,
       precio:125250,
-      categoria: "audio",
+      categoria: "audiop",
       url: "https://falabella.scene7.com/is/image/FalabellaCO/gsc_119895591_2521342_1?wid=1500&hei=1500&qlt=70",
     },
     {
@@ -171,7 +171,7 @@ catalogo.push(
       Conectividad: 3.5mm
       Incluye micrófono: Sí`,
       precio:59900,
-      categoria: "audio",
+      categoria: "audiop",
       url: "https://falabella.scene7.com/is/image/FalabellaCO/4094522_1?wid=1500&hei=1500&qlt=70",
     },
     {
@@ -183,7 +183,7 @@ catalogo.push(
       Conectividad	3.5mm
       Incluye micrófono	:No`,
       precio:34900,
-      categoria: "audio",
+      categoria: "audiop",
       url: "https://falabella.scene7.com/is/image/FalabellaCO/2771659_1?wid=1500&hei=1500&qlt=70",
     },
     {
@@ -195,7 +195,7 @@ catalogo.push(
       Conectividad:	Bluetooth
       Incluye micrófono	:Sí`,
       precio:69900,
-      categoria: "audio",
+      categoria: "audiop",
       url: "https://falabella.scene7.com/is/image/FalabellaCO/gsc_119321799_2301744_1?wid=1500&hei=1500&qlt=70",
     }
     );
