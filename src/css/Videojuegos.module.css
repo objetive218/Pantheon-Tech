@@ -1,0 +1,12 @@
+.articulos{
+ display: flex;
+ flex-direction: row;
+}
+.consola{
+ display: flex;
+ padding-top: 4rem;
+ max-width: 65%;
+position: relative;
+left: 27rem;
+margin-bottom: 2rem;
+}

@@ -3,6 +3,7 @@ import Modelo from "./Modelo";
 import NavBar from './NavBar';
 import CatalogoContext from '../contexts/CatalogoContext';
 import VideojuegoTitle from "../img/videojuegos.svg";
+import StyleVideojuegos from "../css/Videojuegos.module.css"
 
 const Videojuegos = () => {
   const { productos} = useContext(CatalogoContext);
@@ -20,8 +21,8 @@ const Videojuegos = () => {
   return (
     <>
     <NavBar />
-    <img src={VideojuegoTitle} alt="logo" />
-    <section>
+    <img className={StyleVideojuegos.consola} src={VideojuegoTitle} alt="logo" />
+    <section className={StyleVideojuegos.articulos} >
       {video != null
         ? video.map(function (element, index) {
             return (
