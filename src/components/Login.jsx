@@ -30,7 +30,7 @@ const Login = () => {
         >
           <input type="text" placeholder="nombre" name="username" id="username" />
           <input
-            type="text"
+            type="password"
             name="password"
             placeholder="contraseña"
             id="password"
