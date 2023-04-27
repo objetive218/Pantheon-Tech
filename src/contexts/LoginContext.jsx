@@ -5,9 +5,9 @@ const LoginContext =  createContext();
 const LoginProvider = function({children}){
   const [usuario, setUsuario] = useState(null)
   const {data} = useContext(UserDataContext);
-  const logeo = function(usuario, password){
-    const registrado = data.find(function(user){
-      return user.username == usuario;
+  const logeo = function(username, password){
+    const registrado = data.find(function(usuario){
+      return usuario.username == username;
     });
     if(registrado != undefined && registrado.password == password){
       setUsuario(registrado)
@@ -19,10 +19,10 @@ const LoginProvider = function({children}){
     setUsuario(null)
   }
   const esAdmin = function(){
-    if(usuario != null && user.roll == "administrador"){
+    if(usuario != null && usuario.roll == "administrador"){
       return true;
     }
-      return false;
+    return false
   };
 
   return <LoginContext.Provider value={{usuario, setUsuario, logeo, logout, esAdmin}}>
