@@ -3,6 +3,7 @@ import Modelo from "./Modelo";
 import NavBar from './NavBar';
 import CatalogoContext from '../contexts/CatalogoContext';
 import AudioTitle from "../img/audio.svg";
+import StyleAudio from "../css/Audio.module.css"
 
 const AudioP = () => {
   const { productos} = useContext(CatalogoContext);
@@ -20,8 +21,8 @@ const AudioP = () => {
   return (
     <>
     <NavBar />
-    <img src={AudioTitle} alt="logo" />
-    <section>
+    <img className={StyleAudio.audio} src={AudioTitle} alt="logo" />
+    <section className={StyleAudio.articulos} > 
       {audiop != null
         ? audiop.map(function (element, index) {
             return (

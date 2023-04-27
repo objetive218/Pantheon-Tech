@@ -2,11 +2,11 @@
  display: flex;
  flex-direction: row;
 }
-.celuco{
+.comput{
  display: flex;
  padding-top: 4rem;
- max-width: 52%;
+ max-width: 74%;
 position: relative;
-left: 38rem;
+left: 19rem;
 margin-bottom: 2rem;
 }

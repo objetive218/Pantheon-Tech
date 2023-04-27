@@ -2,11 +2,11 @@
  display: flex;
  flex-direction: row;
 }
-.celuco{
- display: flex;
- padding-top: 4rem;
- max-width: 52%;
+.audio{
+display: flex;
+padding-top: 4rem;
+max-width: 28%;
 position: relative;
-left: 38rem;
+left: 57rem;
 margin-bottom: 2rem;
 }

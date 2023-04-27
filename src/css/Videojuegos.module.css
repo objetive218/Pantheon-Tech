@@ -2,11 +2,11 @@
  display: flex;
  flex-direction: row;
 }
-.celuco{
+.consola{
  display: flex;
  padding-top: 4rem;
- max-width: 52%;
+ max-width: 65%;
 position: relative;
-left: 38rem;
+left: 27rem;
 margin-bottom: 2rem;
 }

@@ -3,6 +3,7 @@ import Modelo from "./Modelo";
 import NavBar from './NavBar';
 import CatalogoContext from '../contexts/CatalogoContext';
 import ComputadorTitle from "../img/computadores.svg";
+import StyleComputadores from "../css/Computadores.module.css"
 
 const Computadores = () => {
   const { productos} = useContext(CatalogoContext);
@@ -20,8 +21,8 @@ const Computadores = () => {
   return (
     <>
     <NavBar />
-    <img src={ComputadorTitle} alt="logo" />
-    <section>
+    <img className={StyleComputadores.comput} src={ComputadorTitle} alt="logo" />
+    <section className={StyleComputadores.articulos} >
       {comp != null
         ? comp.map(function (element, index) {
             return (

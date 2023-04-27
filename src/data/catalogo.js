@@ -3,7 +3,7 @@ catalogo.push(
   {
     id: 0,
     modelo: "Apple iPhone 12",
-    especificaciones: `Tamaño de la pantalla: 6.1 pulgadas
+    especificaciones: `Tamaño de la pantalla: 6.1"
     Cámara: 12MP
     Memoria: 128GB
     Batería: 2775 mAh
@@ -15,7 +15,7 @@ catalogo.push(
   {
     id: 1,
     modelo: "Motorola Edge 30 Neo",
-    especificaciones: `Tamaño de la pantalla: 6.3 pulgadas
+    especificaciones: `Tamaño de la pantalla: 6.3"
     Cámara: 13MP
     Memoria: 128GB
     Batería: 4020 mAh
@@ -27,7 +27,7 @@ catalogo.push(
   {
     id: 2,
     modelo: "Samsung Galaxy ZFlip3",
-    especificaciones: `Tamaño de la pantalla: 6.7 pulgadas
+    especificaciones: `Tamaño de la pantalla: 6.7"
     Cámara: 12MP
     Memoria: 256GB
     Batería: 3300 mAh
@@ -39,7 +39,7 @@ catalogo.push(
   {
     id: 3,
     modelo: "Xiaomi 11T Pro",
-    especificaciones: `Tamaño de la pantalla: 6.67 pulgadas
+    especificaciones: `Tamaño de la pantalla: 6.6"
     Cámara: 108MP
     Memoria: 256GB
     Batería: 5000 mAh

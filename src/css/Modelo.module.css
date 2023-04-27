@@ -13,7 +13,7 @@
   height: 100%;
 }
 .nombre{
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 1rem;
   text-align: center;
 }
@@ -29,9 +29,14 @@
   flex-direction: column;
   width: 100%;
   justify-content: center;
-  text-align: center;
-  background-color: aqua;
+  text-align: start;
 }
 .valor{
   text-align: center;
+  font-weight: bolder;
+}
+.carrito{
+  background-color: white;
+  font-size: 3rem;
+  color:#e90064;
 }

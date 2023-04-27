@@ -36,7 +36,7 @@ const Carro = () => {
                     key={index}
                     url={lista[index]?.url}
                     modelo={lista[index]?.modelo}
-                    precio={`${lista[index]?.precio} COP`}
+                    precio={`$ ${lista[index]?.precio} COP`}
                     cantidad={lista[index]?.cantidad}
                     id={lista[index]?.id}
                     elemento={lista[index]}
