@@ -1,10 +1,27 @@
-.box {
+.all {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 40%;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  height: 20vh;
+  background-color: #060047;
+  border-radius: 1rem;
+}
+.form input::placeholder{
+  opacity: 1;
+  color: red;
+  background-color: #EFEFEF;
+  
+}
+.form input{
+  border-radius: 1rem;
 }
