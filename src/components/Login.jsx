@@ -1,5 +1,7 @@
 import React, { useContext, useState } from "react";
 import LoginContext from "../contexts/LoginContext";
+import Formulario from "./Formulario";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const { usuario, logeo, logout, esAdmin } = useContext(LoginContext);
@@ -36,6 +38,7 @@ const Login = () => {
           <button>Ingresar</button>
         </form>
       )}
+      {esAdmin() ? <Link to="/formulario">Agregar un nuevo producto</Link> : "" }
     </>
   );
 };
