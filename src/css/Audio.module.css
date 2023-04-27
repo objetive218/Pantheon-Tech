@@ -1,0 +1,12 @@
+.articulos{
+ display: flex;
+ flex-direction: row;
+}
+.audio{
+display: flex;
+padding-top: 4rem;
+max-width: 28%;
+position: relative;
+left: 57rem;
+margin-bottom: 2rem;
+}
