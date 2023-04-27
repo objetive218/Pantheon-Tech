@@ -1,11 +1,13 @@
 import React,{useState,useContext} from 'react';
+import CatalogoContext from "../contexts/CatalogoContext";
+import FormularioStyle from "../css/Formulario.module.css";
+import NavBar from './NavBar';
 
-import FormularioStyle from "../css/Formulario.module.css"
 
 
 
 const Formulario = () => {
-  const {productos} = useContext(CatalogoContext)
+  const {productos,agregaItem} = useContext(CatalogoContext);
   const [nombre, setNombre] = useState("");
   const [caracteristicas, setCaracteristicas] = useState("");
   const [categoria, setCategoria] = useState("");
@@ -15,8 +17,12 @@ const Formulario = () => {
 
   const handleSubmit = (event) => {
       event.preventDefault();
-      console.log({nombre, caracteristicas, categoria, precio, imagen})}
+      
+      
+    }
   return (
+    <>
+    <NavBar/>
     <form onSubmit={handleSubmit} className={`${FormularioStyle.form}`}>
       <label htmlFor='nombre'className={`${FormularioStyle.label}`}>
       Nombre del artículo:</label>
@@ -80,9 +86,12 @@ const Formulario = () => {
             className={`${FormularioStyle.input}`}
             />
             
-            <button type='submit' className={`${FormularioStyle.button}`}>Enviar</button>
+            <button onClick={function(){
+              setProAdd({id:productos.length-1 +1,modelo:nombre,especificaciones:caracteristicas,categoria:categoria, precio:precio,url:imagen})
+              agregaItem(prodAdd)}} type='submit' className={`${FormularioStyle.button}`}>Enviar</button>
             </form>
     
+            </>
   )
 }
 
