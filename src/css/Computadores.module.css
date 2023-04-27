@@ -1,0 +1,12 @@
+.articulos{
+ display: flex;
+ flex-direction: row;
+}
+.comput{
+ display: flex;
+ padding-top: 4rem;
+ max-width: 74%;
+position: relative;
+left: 19rem;
+margin-bottom: 2rem;
+}
