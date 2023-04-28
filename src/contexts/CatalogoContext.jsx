@@ -5,7 +5,7 @@ const CatalogoContext = createContext(catalogo);
 const CatalogoProvider = function({children}){
   const [productos, setProductos] = useState(catalogo);
   const agregaItem = function(elemento){
-    setProductos([...productos,elemento])
+    setProductos([...productos,elemento,])
   }
   
   return <CatalogoContext.Provider value={{productos, setProductos, agregaItem}}>{children}</CatalogoContext.Provider>
