@@ -34,7 +34,7 @@ catalogo.push(
     Procesador: Snapdragon 888`,
     precio: 3177900,
     categoria: "celulares",
-    url: "https://falabella.scene7.com/is/image/FalabellaCO/gsc_117504291_1629796_1?wid=1500&hei=1500&qlt=70",
+    url: "https://i.linio.com/p/5694dda04fad5257852b66ef2ef0da7c-product.webp",
   },
   {
     id: 3,
@@ -46,7 +46,7 @@ catalogo.push(
     Procesador: Snapdragon 888`,
     precio: 2389900,
     categoria: "celulares",
-    url: "https://falabella.scene7.com/is/image/FalabellaCO/gsc_118192954_2008208_1?wid=1500&hei=1500&qlt=70"
+    url: "https://exitocol.vtexassets.com/arquivos/ids/12525922-800-auto?v=637861755896330000&width=800&height=auto&aspect=true"
   });
 
 catalogo.push(
@@ -146,7 +146,7 @@ catalogo.push(
     control incluido: si`,
     precio:1949900,
     categoria: "videojuegos",
-    url: "https://falabella.scene7.com/is/image/FalabellaCO/9461744_1?wid=1500&hei=1500&qlt=70",
+    url: "https://falabella.scene7.com/is/image/FalabellaCO/9461744_3?wid=1500&hei=1500&qlt=70",
   }
   );
   catalogo.push(
