@@ -13,7 +13,6 @@ const Formulario = () => {
   const [categoria, setCategoria] = useState("");
   const [precio, setPrecio] = useState("");
   const [imagen, setImagen] = useState("");
-  const [prodAdd, setProAdd] = useState({});
 
   const handleSubmit = (event) => {
       event.preventDefault();
@@ -87,8 +86,8 @@ const Formulario = () => {
             />
             
             <button onClick={function(){
-              setProAdd({id:productos.length-1 +1,modelo:nombre,especificaciones:caracteristicas,categoria:categoria, precio:precio,url:imagen})
-              agregaItem(prodAdd)}} type='submit' className={`${FormularioStyle.button}`}>Enviar</button>
+              agregaItem({id:productos.length-1 +1,modelo:nombre,especificaciones:caracteristicas,categoria:categoria, precio:precio,url:imagen})
+              }} type='submit' className={`${FormularioStyle.button}`}>Enviar</button>
             </form>
     
             </>
