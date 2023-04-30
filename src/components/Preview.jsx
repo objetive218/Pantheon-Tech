@@ -10,92 +10,86 @@ import testvid from "../img/vidpreview.png";
 import testaudio from "../img/audiopreview.png";
 
 const Preview = () => {
-  const [cambio, setCambio] = useState(false);
-  const [cambio1, setCambio1] = useState(false);
-  const [cambio2, setCambio2] = useState(false);
-  const [cambio3, setCambio3] = useState(false);
-  const cambiar = function () {
-    setCambio(!cambio);
-  };
+  const [cambio, setCambio] = useState("");
   return (
     <>
       <section className={StylePreview.caja}>
         <picture
           onMouseEnter={function () {
-            setCambio(!cambio);
+            setCambio("celular");
           }}
           onMouseLeave={function () {
-            setCambio(!cambio);
+            setCambio("");
           }}
           className={`${StylePreview.celu} $`}
         >
           <img
-            className={cambio ? StylePreview.active : ""}
+            className={cambio == "celular" ? StylePreview.active : ""}
             src={categoriacelular}
             alt="telefono"
           />
           <img
-            className={cambio ? StylePreview.preview : StylePreview.active}
+            className={cambio == "celular" ? StylePreview.preview : StylePreview.active}
             src={testcel}
             alt="telefono"
           />
         </picture>
         <picture
           onMouseEnter={function () {
-            setCambio1(!cambio1);
+            setCambio("computador");
           }}
           onMouseLeave={function () {
-            setCambio1(!cambio1);
+            setCambio("");
           }}
           className={StylePreview.compu}
         >
           <img
-            className={cambio1 ? StylePreview.active : ""}
+            className={cambio == "computador" ? StylePreview.active : ""}
             src={categoriacomputador}
             alt="computador"
           />
           <img
-            className={cambio1 ? StylePreview.preview : StylePreview.active}
+            className={cambio == "computador" ? StylePreview.preview : StylePreview.active}
             src={testcomp}
             alt="computador"
           />
         </picture>
         <picture
           onMouseEnter={function () {
-            setCambio2(!cambio2);
+            setCambio("videojuego");
           }}
           onMouseLeave={function () {
-            setCambio2(!cambio2);
+            setCambio("");
           }}
           className={StylePreview.nintendo}
         >
           <img
-            className={cambio2 ? StylePreview.active : ""}
+            className={cambio == "videojuego" ? StylePreview.active : ""}
             src={categoriaconsola}
             alt="consola"
           />
           <img
-            className={cambio2 ? StylePreview.preview : StylePreview.active}
+            className={cambio == "videojuego" ? StylePreview.preview : StylePreview.active}
             src={testvid}
             alt="consola"
           />
         </picture>
         <picture
           onMouseEnter={function () {
-            setCambio3(!cambio3);
+            setCambio("audio");
           }}
           onMouseLeave={function () {
-            setCambio3(!cambio3);
+            setCambio("");
           }}
           className={StylePreview.audif}
         >
           <img
-            className={cambio3 ? StylePreview.active : ""}
+            className={cambio == "audio" ? StylePreview.active : ""}
             src={categoriaaudio}
             alt="audio"
           />
           <img
-            className={cambio3 ? StylePreview.preview : StylePreview.active}
+            className={cambio == "audio" ? StylePreview.preview : StylePreview.active}
             src={testaudio}
             alt="audio"
           />
