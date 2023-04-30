@@ -19,7 +19,6 @@
 .preview {
   display: flex;
   position: relative;
-  object-fit: cover;
   justify-items: center;
   width: 70vw;
   height: 70vh;
