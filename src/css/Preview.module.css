@@ -13,6 +13,22 @@
   max-width: 70%;
   max-height: 70%;
 }
+.active{
+  display: none;
+}
+.preview {
+  display: flex;
+  position: relative;
+  object-fit: cover;
+  justify-items: center;
+  width: 70vw;
+  height: 70vh;
+  z-index: 2;
+  top: 0;
+  right: 3rem;
+  bottom: 3rem;
+  left: 0;
+}
 .compu {
   grid-column: 2/3;
   grid-row: 1/2;
