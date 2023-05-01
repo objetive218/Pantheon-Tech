@@ -1,48 +1,29 @@
 .caja {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  width: 100%;
-  height: 80%;
-  justify-items: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
 }
-.celu {
-  grid-column: 1/2;
-  grid-row: 1/2;
-  max-width: 70%;
-  max-height: 70%;
+.imagen {
+  flex: 1;
+  position:relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
 }
-.active{
+.active {
   display: none;
 }
 .preview {
-  display: flex;
-  position: relative;
-  justify-items: center;
-  width: 70vw;
-  height: 70vh;
+  position: absolute;
   z-index: 2;
   top: 0;
-  right: 3rem;
-  bottom: 3rem;
   left: 0;
-}
-.compu {
-  grid-column: 2/3;
-  grid-row: 1/2;
-  max-width: 75%;
-  max-height: 75%;
-}
-.nintendo {
-  grid-column: 3/4;
-  grid-row: 1/2;
-  max-width: 75%;
-  max-height: 75%;
-}
-.audif {
-  grid-column: 4/5;
-  grid-row: 1/2;
-  max-width: 75%;
-  max-height: 75%;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+
 }
