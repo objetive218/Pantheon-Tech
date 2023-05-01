@@ -1,94 +1,40 @@
-
-:root{
-    --color-esqueleto: #060047;
-}
-
-
-
-.containerarticle .boxarticle{
-    width: 200px;
-    height: 250px;
-    background: var(--color-esqueleto);
-    margin: 20px;
-}
-
-/*Aquí debajo va el FOOTER*/
-
-footer{
-    width: 100%;
-    padding: 50px 0px;
-    background-image: url(../Images/background-footer.svg);
-    background-size: cover;
-    
-    /*background-color: #d0f0f8;
-    -webkit-mask-image: url("../Images/background-footer.svg");
-    mask-image: url("../Images/background-footer.svg");
-    -webkit-mask-size: cover;
-    mask-size: cover;*/
-}
-
-.containerfooter{
+#footerMain{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: auto;
-    margin-top: 100px;
+    flex-wrap:wrap;
+    padding: 1rem;
+    gap:1rem;
+    font-size: 0.8rem;
 }
+#footerLogo{
+    height:4rem;
+    align-self: center;
 
-.boxfooter{
+}
+#footerLinks{
+    align-self: center;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+    gap: 0.25rem;
+    flex-direction: column;
+}
+#footerLinks a{
+    text-decoration: none;
+    color: #060047;
+}
+#copyright {
+    flex: 2;
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    align-items: center;
+    justify-content: center;
 }
-
-.boxfooter .logo img{
-    width: 180px;
-}
-
-.boxfooter .terms{
-    max-width: 350px;
-    margin-top: 20px;
-    font-weight: 500;
-    color: #7a7a7a;
-    font-size: 18px;
-}
-
-.boxfooter h2{
-    margin-bottom: 30px;
-    color: #343434;
-    font-weight: 700;
-}
-
-.boxfooter a{
-    margin-top: 10px;
-    color: #7a7a7a;
-    font-weight: 600;
-}
-
-.boxfooter a:hover{
-    opacity: 0.8;
-}
-
-.boxfooter a .fab{
-    font-size: 20px;
-}
-
-.boxcopyright{
-    max-width: 1200px;
-    margin: auto;
-    text-align: center;
-    padding: 0px 40px;
-}
-
-.boxcopyright p{
-    margin-top: 20px;
-    color: #E90064;
-}
-
-.boxcopyright hr{
-    border: none;
-    height: 1px;
-    background-color: #060047;
+#copyright a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+    font-size: 1rem;
+    color: #060047;
+    font-size: 0.8rem;
 }
