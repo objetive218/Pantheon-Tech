@@ -9,8 +9,9 @@
   bottom: 0;
   top: 10rem;
   gap: 1.2rem;
-  scroll-behavior: smooth;
   overflow: scroll;
+  overscroll-behavior: smooth;
+  overflow-y: auto;
 }
 .checkout{ 
   display: flex;
