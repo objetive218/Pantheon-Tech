@@ -48,6 +48,9 @@ const Login = () => {
               <button>Ingresar</button>
             </form>
           )}
+          <Link to="/">
+        <h2>Regresar</h2>
+      </Link>
           {esAdmin() ? (
             <Link to="/formulario">Agregar un nuevo producto</Link>
           ) : (

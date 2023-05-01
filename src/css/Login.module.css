@@ -14,6 +14,7 @@
   width: 20vw;
   height: 20vh;
   background-color: #060047;
+  color: white;
   border-radius: 1rem;
 }
 .form input::placeholder{
