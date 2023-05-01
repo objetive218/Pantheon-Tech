@@ -12,6 +12,7 @@
   overflow: scroll;
   overscroll-behavior: smooth;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 .checkout{ 
   display: flex;
