@@ -1,29 +1,33 @@
 .forma{
   display: flex;
   flex-direction: column;
-  position: relative;
+  position: absolute;
+  width: 65vw;
+  height: 80vh;
   right: 2rem;
   left: 0;
   bottom: 0;
   top: 10rem;
   gap: 1.2rem;
-  scroll-behavior: auto;
+  scroll-behavior: smooth;
+  overflow: scroll;
 }
 .checkout{ 
   display: flex;
   flex-direction: column;
-  position: relative;
+  position: absolute;
+  justify-content: center;
   margin: 2rem 6rem 2rem 2rem;
   padding: 1rem;
   gap: 1rem;
-  width: 23%;
-  height: 50%;
+  width: 20%;
+  height: 30%;
   border: ridge #E90064;
   border-radius: 1.5rem;
   top: 10rem;
   right: 0;
   bottom: 0;
-  left: 10rem;
+  left: 70rem;
 }
 .tituloCar{
   display: flex;
@@ -46,7 +50,8 @@
 .title{
   display: flex;
   position: absolute;
-  top: 10rem;
+  top: 9rem;
     right: 0;
     left: 65rem;
+    padding: 1rem;
 }
