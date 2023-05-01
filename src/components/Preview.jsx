@@ -21,7 +21,7 @@ const Preview = () => {
           onMouseLeave={function () {
             setCambio("");
           }}
-          className={`${StylePreview.celu} $`}
+          className={`${StylePreview.imagen}`}
         >
           <img
             className={cambio == "celular" ? StylePreview.active : ""}
@@ -41,7 +41,7 @@ const Preview = () => {
           onMouseLeave={function () {
             setCambio("");
           }}
-          className={StylePreview.compu}
+          className={`${StylePreview.imagen}`}
         >
           <img
             className={cambio == "computador" ? StylePreview.active : ""}
@@ -61,7 +61,7 @@ const Preview = () => {
           onMouseLeave={function () {
             setCambio("");
           }}
-          className={StylePreview.nintendo}
+          className={`${StylePreview.imagen}`}
         >
           <img
             className={cambio == "videojuego" ? StylePreview.active : ""}
@@ -81,7 +81,7 @@ const Preview = () => {
           onMouseLeave={function () {
             setCambio("");
           }}
-          className={StylePreview.audif}
+          className={`${StylePreview.imagen}`}
         >
           <img
             className={cambio == "audio" ? StylePreview.active : ""}
