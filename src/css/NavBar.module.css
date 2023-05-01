@@ -38,6 +38,10 @@
 .logo {
   color: #e90064;
   font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  text-decoration-line: none;
 }
 .carrito {
   color: #e90064;
@@ -46,4 +50,7 @@
 .buscar{
     color:#e90064;
     font-size: 1rem;
+}
+.usuario{
+  font-size: 1.5rem;
 }

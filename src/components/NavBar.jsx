@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useContext} from "react";
 import StyleNavBar from "../css/NavBar.module.css";
 import { Link } from "react-router-dom";
 import LogoPantheon from "../img/logo.svg";
@@ -8,8 +8,10 @@ import VideojuegoTitle from "../img/videojuegos.svg";
 import AudioTitle from "../img/audio.svg";
 import { BsFillPersonFill, BsCart2 } from "react-icons/bs";
 import Buscador from "./Buscador";
+import LoginContext from "../contexts/LoginContext";
 
 const NavBar = () => {
+  const {usuario} = useContext(LoginContext)
   return (
     <nav className={StyleNavBar.header}>
       <Link to="/">
@@ -29,7 +31,7 @@ const NavBar = () => {
       </Link>
       <Buscador className={StyleNavBar.buscar}/>
       <Link className={StyleNavBar.logo} to="/login">
-        <BsFillPersonFill />
+        <BsFillPersonFill /> {usuario != null ?<span className={StyleNavBar.usuario}>{usuario.username} - {usuario.roll} </span>  : ""}
       </Link>
       <Link className={StyleNavBar.carrito} to="/carro">
         <BsCart2 />
