@@ -21,7 +21,9 @@ const Celulares = () => {
   return (
     <>
     <NavBar />
-    <img className={StyleCelulares.celuco} src={CelularesTitle} alt="logo" />
+    <picture className={StyleCelulares.celuco}>
+    <img src={CelularesTitle} alt="logo" />
+    </picture>
     <section className={StyleCelulares.articulos}>
       {cel != null
         ? cel.map(function (element, index) {
