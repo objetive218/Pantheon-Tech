@@ -4,9 +4,16 @@
 }
 .consola{
  display: flex;
- padding-top: 4rem;
- max-width: 65%;
-position: relative;
-left: 27rem;
-margin-bottom: 2rem;
+ justify-content: flex-end;
+ align-items: center;
+ height: 15vh;
+ width: 100%;
+ margin-bottom: 1rem;
+ flex-wrap: wrap;
+ padding-right: 4rem;
+}
+.consola img{
+ width: 32%;
+ height: auto;
+ display: inline-block;
 }

@@ -1,12 +1,19 @@
-.articulos{
+.articulos {
  display: flex;
  flex-direction: row;
 }
-.comput{
+.comput {
  display: flex;
- padding-top: 4rem;
- max-width: 74%;
-position: relative;
-left: 19rem;
-margin-bottom: 2rem;
+ justify-content: flex-end;
+ align-items: center;
+ height: 15vh;
+ width: 100%;
+ margin-bottom: 1rem;
+ flex-wrap: wrap;
+ padding-right: 4rem;
+}
+.comput img{
+ width: 40%;
+ height: auto;
+ display: inline-block;
 }

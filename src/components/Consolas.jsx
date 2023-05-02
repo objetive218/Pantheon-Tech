@@ -21,7 +21,9 @@ const Videojuegos = () => {
   return (
     <>
     <NavBar />
-    <img className={StyleVideojuegos.consola} src={VideojuegoTitle} alt="logo" />
+    <picture className={StyleVideojuegos.consola}>
+    <img src={VideojuegoTitle} alt="logo" />
+    </picture>
     <section className={StyleVideojuegos.articulos} >
       {video != null
         ? video.map(function (element, index) {

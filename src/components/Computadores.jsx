@@ -21,7 +21,9 @@ const Computadores = () => {
   return (
     <>
     <NavBar />
-    <img className={StyleComputadores.comput} src={ComputadorTitle} alt="logo" />
+    <picture className={StyleComputadores.comput}>
+    <img src={ComputadorTitle} alt="logo" />
+    </picture>
     <section className={StyleComputadores.articulos} >
       {comp != null
         ? comp.map(function (element, index) {
