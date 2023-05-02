@@ -4,6 +4,7 @@
     padding: 1rem;
     gap:1rem;
     font-size: 0.8rem;
+    padding-top: 9rem;
 }
 #footerLogo{
     height:4rem;
@@ -37,4 +38,10 @@
     font-size: 1rem;
     color: #060047;
     font-size: 0.8rem;
+}
+@media ( max-width: 1590px){
+    #footerMain{
+        padding-top: 7rem;
+    }
+
 }
