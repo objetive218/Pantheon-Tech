@@ -1,6 +1,7 @@
 import React from 'react'
 import NavBar from './NavBar'
 import StyleNosotros from "../css/QuienesSomos.module.css"
+import Footer from "./Footer";
 
 const QuienesSomos = () => {
   return (
@@ -23,6 +24,7 @@ const QuienesSomos = () => {
     para ofrecer una mejor cobertura y mejorar el servicio al cliente.
     </p>
     </article>
+    <Footer />
     </>
   )
 }
