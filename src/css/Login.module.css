@@ -48,4 +48,13 @@
 .form button:hover{
   background-color: #E90064;
 }
+.link {
+  color: #E90064;
+  font-size: 19px;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
 
+.link:hover {
+  
+}
