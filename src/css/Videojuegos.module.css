@@ -17,3 +17,9 @@
  height: auto;
  display: inline-block;
 }
+@media(max-width: 780px){
+  .articulos{
+    display: flex;
+    flex-direction: column;
+   }
+}
