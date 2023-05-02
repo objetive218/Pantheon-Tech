@@ -26,8 +26,8 @@ const Carro = () => {
   return (
     <>
       <NavBar />
-      <section className={CarroStyle.all}>
       <h1 className={CarroStyle.title}>Carrito De Compras</h1>
+      <section className={CarroStyle.all}>
         <article className={CarroStyle.forma}>
           {lista != null
             ? lista.map(function (element, index) {
