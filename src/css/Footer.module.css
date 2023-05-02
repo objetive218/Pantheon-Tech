@@ -42,13 +42,13 @@
 }
 @media ( min-width: 1590px){
     #footerMain{
-        padding-top: 7rem;
+        padding-top: 0rem;
     }
 
 }
 @media ( min-width: 1050px){
     #footerMain{
-        padding-top: 0rem;
+        padding-top: 8rem;
     }
 
 }
