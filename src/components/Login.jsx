@@ -1,8 +1,8 @@
 import React, { useContext, useState } from "react";
 import LoginContext from "../contexts/LoginContext";
-import Formulario from "./Formulario";
 import { Link } from "react-router-dom";
 import LoginStyle from "../css/Login.module.css";
+import {BsLockFill,BsFillPersonFill} from "react-icons/bs"
 
 const Login = () => {
   const { usuario, logeo, logout, esAdmin } = useContext(LoginContext);
@@ -33,18 +33,22 @@ const Login = () => {
                 logeo(username.value, password.value);
               }}
             >
+              <span className={LoginStyle.test}><BsFillPersonFill/>
               <input
                 type="text"
                 placeholder="nombre"
                 name="username"
                 id="username"
-              />
+                />
+                </span>
+              <span className={LoginStyle.test}><BsLockFill/>
               <input
                 type="password"
                 name="password"
                 placeholder="contraseña"
                 id="password"
-              />
+                />
+                </span>
               <button>Ingresar</button>
             </form>
           )}
