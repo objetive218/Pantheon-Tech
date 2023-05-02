@@ -127,7 +127,7 @@ catalogo.push(
   },
   {
     id: 10,
-    modelo: "Playstation 5",
+    modelo: "Play station 5",
     especificaciones: `cpu: Zen 2 / 8 núcleos / 16 hilos frecuencia variable, hasta 3.5GHz
     Memoria: SDRAM GDDR6 de 16 GB
     Almacenamiento expandible: Si
