@@ -40,6 +40,11 @@
     color: #060047;
     font-size: 0.8rem;
 }
+@media ( max-width: 700px ){
+    #footerLogo{
+        display: none;
+    }
+}
 @media ( min-width: 1050px){
     #footerMain{
         padding-top: 0rem;
@@ -50,5 +55,5 @@
     #footerMain{
         padding-top: 8rem;
     }
-
+    
 }
