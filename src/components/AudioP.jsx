@@ -21,7 +21,9 @@ const AudioP = () => {
   return (
     <>
     <NavBar />
-    <img className={StyleAudio.audio} src={AudioTitle} alt="logo" />
+    <picture className={StyleAudio.audio}>
+    <img src={AudioTitle} alt="logo" />
+    </picture>
     <section className={StyleAudio.articulos} > 
       {audiop != null
         ? audiop.map(function (element, index) {
