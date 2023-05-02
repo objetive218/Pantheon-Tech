@@ -10,7 +10,7 @@ catalogo.push(
     Procesador: Apple A14 Bionic`,
     precio: 3829000,
     categoria: "celulares",
-    url: "https://falabella.scene7.com/is/image/FalabellaCO/9713518_1?wid=1500&hei=1500&qlt=70"
+    url: "https://falabella.scene7.com/is/image/FalabellaCO/9713518_1?wid=1500&hei=1500&qlt=70",
   },
   {
     id: 1,
@@ -46,8 +46,9 @@ catalogo.push(
     Procesador: Snapdragon 888`,
     precio: 2389900,
     categoria: "celulares",
-    url: "https://exitocol.vtexassets.com/arquivos/ids/12525922-800-auto?v=637861755896330000&width=800&height=auto&aspect=true"
-  });
+    url: "https://exitocol.vtexassets.com/arquivos/ids/12525922-800-auto?v=637861755896330000&width=800&height=auto&aspect=true",
+  }
+);
 
 catalogo.push(
   {
@@ -58,7 +59,7 @@ catalogo.push(
     Disco:512GB
     tarjeta de video:NVIDIA GEFORCE RTX 3050
     Resolución: FullHD`,
-    precio:3349900,
+    precio: 3349900,
     categoria: "computadores",
     url: "https://falabella.scene7.com/is/image/FalabellaCO/62830684_1?wid=1500&hei=1500&qlt=70",
   },
@@ -70,7 +71,7 @@ catalogo.push(
     Disco:512GB
     tarjeta de video:NVIDIA GEFORCE GTX 1650
     Resolución: FullHD`,
-    precio:3199900,
+    precio: 3199900,
     categoria: "computadores",
     url: "https://falabella.scene7.com/is/image/FalabellaCO/43948892_1?wid=1500&hei=1500&qlt=70",
   },
@@ -94,7 +95,7 @@ catalogo.push(
     Disco:512GB
     tarjeta de video:NVIDIA GEFORCE RTX 3050
     Resolución: FullHD`,
-    precio:3999900,
+    precio: 3999900,
     categoria: "computadores",
     url: "https://panamericana.vtexassets.com/arquivos/ids/488144-800-auto?v=638146688731300000&width=800&height=auto&aspect=true",
   }
@@ -108,7 +109,7 @@ catalogo.push(
     Almacenamiento expandible: Si
     Resolución: FullHD
     control incluido: No`,
-    precio:1579900,
+    precio: 1579900,
     categoria: "videojuegos",
     url: "https://falabella.scene7.com/is/image/FalabellaCO/gsc_118315070_2051858_1?wid=1500&hei=1500&qlt=70",
   },
@@ -120,7 +121,7 @@ catalogo.push(
     Almacenamiento expandible: Si
     Resolución: 4k
     control incluido: si`,
-    precio:3199900,
+    precio: 3199900,
     categoria: "videojuegos",
     url: "https://falabella.scene7.com/is/image/FalabellaCO/gsc_119629958_2052296_1?wid=1500&hei=1500&qlt=70",
   },
@@ -132,7 +133,7 @@ catalogo.push(
     Almacenamiento expandible: Si
     Resolución: 4k
     control incluido: si`,
-    precio:3199900,
+    precio: 3199900,
     categoria: "videojuegos",
     url: "https://falabella.scene7.com/is/image/FalabellaCO/gsc_119629528_2052167_1?wid=1500&hei=1500&qlt=70",
   },
@@ -144,60 +145,60 @@ catalogo.push(
     Almacenamiento expandible: Si
     Resolución: 4k
     control incluido: si`,
-    precio:1949900,
+    precio: 1949900,
     categoria: "videojuegos",
     url: "https://falabella.scene7.com/is/image/FalabellaCO/9461744_3?wid=1500&hei=1500&qlt=70",
   }
-  );
-  catalogo.push(
-    {
-      id: 12,
-      modelo: "Audífonos in-ear Tune 110",
-      especificaciones: `Frecuencia: 20 Hz - 20 kHz
+);
+catalogo.push(
+  {
+    id: 12,
+    modelo: "Audífonos in-ear Tune 110",
+    especificaciones: `Frecuencia: 20 Hz - 20 kHz
       Largo del cable: 111.3cm
       Resistente al agua: Si
       Conectividad: 3.5mm
       Incluye micrófono: Sí`,
-      precio:125250,
-      categoria: "audiop",
-      url: "https://falabella.scene7.com/is/image/FalabellaCO/gsc_119895591_2521342_1?wid=1500&hei=1500&qlt=70",
-    },
-    {
-      id: 13,
-      modelo: "Audífonos Alámbricos JBL T110",
-      especificaciones: `Frecuencia: 20 Hz - 20 kHz
+    precio: 125250,
+    categoria: "audiop",
+    url: "https://falabella.scene7.com/is/image/FalabellaCO/gsc_119895591_2521342_1?wid=1500&hei=1500&qlt=70",
+  },
+  {
+    id: 13,
+    modelo: "Audífonos Alámbricos JBL T110",
+    especificaciones: `Frecuencia: 20 Hz - 20 kHz
       Largo del cable:	140 cm
       Resistente al agua: No
       Conectividad: 3.5mm
       Incluye micrófono: Sí`,
-      precio:59900,
-      categoria: "audiop",
-      url: "https://falabella.scene7.com/is/image/FalabellaCO/4094522_1?wid=1500&hei=1500&qlt=70",
-    },
-    {
-      id: 14,
-      modelo: "Audífonos Manos Libres MDR-EX15AP",
-      especificaciones: `Frecuencia: 20 Hz - 20 kHz
+    precio: 59900,
+    categoria: "audiop",
+    url: "https://falabella.scene7.com/is/image/FalabellaCO/4094522_1?wid=1500&hei=1500&qlt=70",
+  },
+  {
+    id: 14,
+    modelo: "Audífonos Manos Libres MDR-EX15AP",
+    especificaciones: `Frecuencia: 20 Hz - 20 kHz
       Largo del cable:	120 cm
       Resistente al agua: No
       Conectividad	3.5mm
       Incluye micrófono	:No`,
-      precio:34900,
-      categoria: "audiop",
-      url: "https://falabella.scene7.com/is/image/FalabellaCO/2771659_1?wid=1500&hei=1500&qlt=70",
-    },
-    {
-      id: 15,
-      modelo: "Audífonos On-Ear Sony mdr-zx110ap",
-      especificaciones: `Frecuencia: 20-20.000 Hz
+    precio: 34900,
+    categoria: "audiop",
+    url: "https://falabella.scene7.com/is/image/FalabellaCO/2187394_1?wid=1500&hei=1500&qlt=70",
+  },
+  {
+    id: 15,
+    modelo: "Audífonos On-Ear Sony mdr-zx110ap",
+    especificaciones: `Frecuencia: 20-20.000 Hz
       Largo del cable:	140 cm
       Resistente al agua: No
       Conectividad:	Bluetooth
       Incluye micrófono	:Sí`,
-      precio:69900,
-      categoria: "audiop",
-      url: "https://falabella.scene7.com/is/image/FalabellaCO/gsc_119321799_2301744_1?wid=1500&hei=1500&qlt=70",
-    }
-    );
+    precio: 69900,
+    categoria: "audiop",
+    url: "https://falabella.scene7.com/is/image/FalabellaCO/gsc_119321799_2301744_1?wid=1500&hei=1500&qlt=70",
+  }
+);
 
 export { catalogo };
