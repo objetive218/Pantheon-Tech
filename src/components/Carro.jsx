@@ -3,6 +3,7 @@ import React, { useContext, useState, useEffect } from "react";
 import ModeloCar from "./ModeloCar";
 import CarroStyle from "../css/Carro.module.css";
 import NavBar from "./NavBar";
+import numeral from "numeral";
 
 const Carro = () => {
   const { carrito } = useContext(CarritoContext);
@@ -36,7 +37,7 @@ const Carro = () => {
                     key={index}
                     url={lista[index]?.url}
                     modelo={lista[index]?.modelo}
-                    precio={`$ ${lista[index]?.precio} COP`}
+                    precio={`$ ${numeral(lista[index]?.precio).format('0,0')} COP`}
                     cantidad={lista[index]?.cantidad}
                     id={lista[index]?.id}
                     elemento={lista[index]}
@@ -47,9 +48,9 @@ const Carro = () => {
         </article>
         <article className={CarroStyle.checkout}>
           <h2 className={CarroStyle.tituloCar}>Total del carrito</h2>
-          <p> {`Subtotal: ${total}`}</p>
-          <p> {carrito.subTotal == 0 ? "Envio 0": "Envio 40000" }</p>
-          <p> {`total: ${complete}`}</p>
+          <p> {`Subtotal: ${numeral(total).format('0,0')}`}</p>
+          <p> {carrito.subTotal == 0 ? "Envio 0": "Envio 40,000" }</p>
+          <p> {`total: ${numeral(complete).format('0,0')}`}</p>
           <form action="#">
             <button className={CarroStyle.botton1}>Finalizar compra</button>
           </form>
