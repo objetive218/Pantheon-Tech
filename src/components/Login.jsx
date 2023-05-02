@@ -18,7 +18,7 @@ const Login = () => {
                 logout();
               }}
             >
-              <span>
+              <span className={LoginStyle.username}>
                 {usuario.username} - {usuario.roll}
               </span>
               <button>salir</button>
