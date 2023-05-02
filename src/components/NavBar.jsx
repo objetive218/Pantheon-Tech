@@ -6,7 +6,7 @@ import CelularesTitle from "../img/celulares.svg";
 import ComputadorTitle from "../img/computadores.svg";
 import VideojuegoTitle from "../img/videojuegos.svg";
 import AudioTitle from "../img/audio.svg";
-import { BsFillPersonFill, BsCart2 } from "react-icons/bs";
+import { BsFillPersonFill, BsCart2, BsFillGearFill} from "react-icons/bs";
 import Buscador from "./Buscador";
 import LoginContext from "../contexts/LoginContext";
 
@@ -31,7 +31,7 @@ const NavBar = () => {
       </Link>
       <Buscador className={StyleNavBar.buscar}/>
       <Link className={StyleNavBar.logo} to="/login">
-        <BsFillPersonFill /> {usuario != null ?<span className={StyleNavBar.usuario}>{usuario.username} - {usuario.roll} </span>  : ""}
+        <BsFillPersonFill /> {usuario != null ?<span className={StyleNavBar.usuario}>{usuario.username} {usuario.roll== "administrador"?<BsFillGearFill/>: ""} </span>  : ""}
       </Link>
       <Link className={StyleNavBar.carrito} to="/carro">
         <BsCart2 />
