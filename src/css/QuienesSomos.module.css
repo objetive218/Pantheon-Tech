@@ -1,0 +1,11 @@
+.all{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  width: 100vw;
+  height: 70vh;
+  gap: 2rem;
+}
