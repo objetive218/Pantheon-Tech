@@ -3,6 +3,7 @@ import modeloStyle from "../css/Modelo.module.css";
 import CarritoContext from "../contexts/CarritoContext";
 import Borde from "../img/borde.svg"
 import { BsCart2 } from "react-icons/bs";
+import numeral from "numeral";
 
 const Modelo = (props) => {
   const { eliminarModel, addModel } = useContext(CarritoContext);
@@ -17,7 +18,7 @@ const Modelo = (props) => {
         />
         <h2 className={modeloStyle.nombre} >{props.modelo}</h2>
         <p className={modeloStyle.caracteristica}>{props.especificaciones}</p>
-        <p className={modeloStyle.valor}>{`$ ${props.precio}`}</p>
+        <p className={modeloStyle.valor}>{`$ ${numeral(props.precio).format('0,0')}`}</p>
         <form action="#">
           <button className={modeloStyle.carrito}
             type="button"
