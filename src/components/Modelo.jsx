@@ -18,6 +18,7 @@ const Modelo = (props) => {
         />
         <h2 className={modeloStyle.nombre} >{props.modelo}</h2>
         <p className={modeloStyle.caracteristica}>{props.especificaciones}</p>
+        <section id={modeloStyle.cajita} >
         <p className={modeloStyle.valor}>{`$ ${numeral(props.precio).format('0,0')}`}</p>
         <form action="#">
           <button className={modeloStyle.carrito}
@@ -28,15 +29,8 @@ const Modelo = (props) => {
           >
           <BsCart2 />
           </button>
-          <button
-            type="button"
-            onClick={function () {
-              eliminarModel(props.id);
-            }}
-          >
-            eliminar
-          </button>
         </form>
+        </section>
       </section>
     </>
   );

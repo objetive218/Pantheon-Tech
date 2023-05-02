@@ -40,4 +40,11 @@
   background-color: white;
   font-size: 3rem;
   color:#e90064;
+  padding-left: 2rem;
+}
+#cajita{
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem;
+  align-items: center;
 }
