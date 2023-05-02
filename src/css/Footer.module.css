@@ -1,3 +1,4 @@
+
 #footerMain{
     display: flex;
     flex-wrap:wrap;
@@ -39,9 +40,15 @@
     color: #060047;
     font-size: 0.8rem;
 }
-@media ( max-width: 1590px){
+@media ( min-width: 1590px){
     #footerMain{
         padding-top: 7rem;
+    }
+
+}
+@media ( min-width: 1050px){
+    #footerMain{
+        padding-top: 0rem;
     }
 
 }
