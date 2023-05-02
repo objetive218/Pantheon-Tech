@@ -95,13 +95,13 @@ const Preview = () => {
             src={categoriaaudio}
             alt="audio"
           />
-            <Link to="/audio" >
+          <Link to="/audio" >
           <img
             className={cambio == "audio" ? StylePreview.preview : StylePreview.active}
             src={testaudio}
             alt="audio"
-          />
-        </Link>
+            />
+            </Link>
         </picture>
       </section>
     </>

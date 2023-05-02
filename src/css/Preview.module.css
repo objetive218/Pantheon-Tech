@@ -27,3 +27,9 @@
   object-fit: contain;
 
 }
+@media ( max-width: 700px ){
+  .caja{
+    display: flex;
+    flex-direction: column;
+  }
+}
