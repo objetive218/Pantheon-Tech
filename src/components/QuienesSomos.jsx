@@ -1,11 +1,12 @@
 import React from 'react'
 import NavBar from './NavBar'
+import StyleNosotros from "../css/QuienesSomos.module.css"
 
 const QuienesSomos = () => {
   return (
     <>
     <NavBar/>
-   <article>
+   <article className={StyleNosotros.all}>
     <h2>¿Quienes Somos?</h2>
     <p>Somos una empresa comercializadora de articulos tecnologicos a nivel nacional, con el objetivo de brindar los mejores precios del mercado en Colombia.</p>
     <h3>Misión:</h3>
