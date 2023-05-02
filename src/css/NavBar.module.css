@@ -54,3 +54,18 @@
 .usuario{
   font-size: 1.5rem;
 }
+
+@media ( max-width: 700px ){
+  .celulares{
+    display: none;
+  }
+  .computadores{
+    display: none;
+  }
+  .consolas{
+    display: none;
+  }
+  .audio{
+    display: none;
+  }
+}
