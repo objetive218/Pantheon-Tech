@@ -48,3 +48,25 @@
   padding: 0.5rem;
   align-items: center;
 }
+@media(max-width: 780px){
+  .modelo{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: relative;
+    width: 100vw;
+    height: 24vh;
+    padding: 1rem;
+    gap: 2rem;
+    margin: 1rem;
+  }
+  .bordecito{
+    display: none;
+  }
+  .caracteristica{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+  }
+}
