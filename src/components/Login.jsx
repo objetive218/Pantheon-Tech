@@ -49,7 +49,7 @@ const Login = () => {
             </form>
           )}
           <Link to="/">
-        <h2>Regresar</h2>
+        <h2 className={LoginStyle.link}>Regresar</h2>
       </Link>
           {esAdmin() ? (
             <Link to="/formulario">Agregar un nuevo producto</Link>
