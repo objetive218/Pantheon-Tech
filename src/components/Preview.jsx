@@ -25,7 +25,7 @@ const Preview = () => {
           className={`${StylePreview.imagen}`}
         >
           <img
-            className={cambio == "celular" ? StylePreview.active : ""}
+            className={`${cambio == "celular" ? StylePreview.active : ""} ${StylePreview.test}`}
             src={categoriacelular}
             alt="telefono"
           />
@@ -47,7 +47,7 @@ const Preview = () => {
           className={`${StylePreview.imagen}`}
         >
           <img
-            className={cambio == "computador" ? StylePreview.active : ""}
+            className={`${cambio == "computador" ? StylePreview.active : ""}${StylePreview.test}`}
             src={categoriacomputador}
             alt="computador"
           />
@@ -69,7 +69,7 @@ const Preview = () => {
           className={`${StylePreview.imagen}`}
         >
           <img
-            className={cambio == "videojuego" ? StylePreview.active : ""}
+            className={`{cambio == "videojuego" ? StylePreview.active : ""}${StylePreview.test}`}
             src={categoriaconsola}
             alt="consola"
           />
@@ -91,7 +91,7 @@ const Preview = () => {
           className={`${StylePreview.imagen}`}
         >
           <img
-            className={cambio == "audio" ? StylePreview.active : ""}
+            className={`${cambio == "audio" ? StylePreview.active : ""} ${StylePreview.test}`}
             src={categoriaaudio}
             alt="audio"
           />
