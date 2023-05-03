@@ -106,13 +106,13 @@
 @media(max-width: 400px){
   .modelo{
     width: 46vw;
-    height: 40vh;
+    height: 46vh;
   }
   .bordecito{
     display: none;
   }
   .nombre{
-    font-size: 0.8rem;
+    font-size: 0.5rem;
   }
   #imgtl{
     margin: 0rem;
@@ -120,7 +120,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    width: 3rem;
   }
   #cajita{
     display: flex;
@@ -135,5 +135,10 @@
   }
   .carrito{
     font-size: 2rem;
+  }
+  .image{
+    width: 90%;
+    height: 90%;
+    padding-top: 0rem;
   }
 }
