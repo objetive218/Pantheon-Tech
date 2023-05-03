@@ -49,3 +49,8 @@
   justify-content: flex-end;
     padding: 1rem;
 }
+@media(max-width: 780px){
+  .botton1{
+    width: 5rem;
+  }
+}

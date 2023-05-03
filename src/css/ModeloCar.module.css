@@ -18,3 +18,10 @@
   margin: 1rem;
   border-radius: 2rem;
 }
+@media(max-width: 780px){
+  .box{
+    flex-direction: column;
+    width: 15rem;
+    gap: 1rem;
+  }
+}
