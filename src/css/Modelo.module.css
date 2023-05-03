@@ -9,8 +9,8 @@
   padding: 2rem;
 }
 .image{
-  width: 90%;
-  height: 90%;
+  width: 60vw;
+  height: 40vh;
   padding-top: 3.5rem;
 }
 .nombre{
@@ -51,20 +51,27 @@
   display: flex;
   flex-direction: column;
 }
-@media(max-width: 780px){
+
+@media(max-width: 1300px){
+  .bordecito{
+    height: 50%;
+    width: 97%;
+  }
+}
+
+@media(max-width: 1040px){
   .modelo{
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content: space-between;
     position: relative;
-    width: 25vw;
-    height: 40vh;
+    width: 80%;
+    height: 60%;
     padding: 1rem;
-    gap: 3rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     margin: 1rem;
+    gap: 3rem;
     border: ridge #E90064;
   }
   .bordecito{
@@ -76,42 +83,50 @@
   #imgtl{
     margin: 0rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    
+    width: 5rem;
+    height: 11rem;
   }
   #cajita{
     display: flex;
-    padding: 0;
+    flex-direction: row;
     align-items: center;
+    padding: 0.3rem;
+    margin-bottom: 1rem;
     
   }
   .caracteristica{
     display: flex;
     flex-direction: row;
-    width: 10rem;
+    width: 11rem;
+    height: 3rem;
+    font-size: 0.8rem;
   }
   .carrito{
     font-size: 2rem;
   }
-}
-@media(max-width: 1200px){
   .image{
-    width: 60%;
-    height: 60%;
+    width: 100%;
+    height: 100%;
     padding-top: 0rem;
   }
 }
-
-@media(max-width: 450px){
+@media(max-width: 480px){
   .modelo{
-    width: 88vw;
-    height: 37vh;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 88%;
+    height: 37%;
     padding: 1rem;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin: 1rem;
+  
+    border: ridge #E90064;
   }
   .bordecito{
     display: none;
