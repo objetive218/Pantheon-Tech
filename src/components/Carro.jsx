@@ -1,6 +1,7 @@
-import { useHistory } from "react-router-dom";
-import CarritoContext from "../contexts/CarritoContext";
 import React, { useContext, useState, useEffect } from "react";
+import { Redirect, Link } from "react-router-dom";
+import CarritoContext from "../contexts/CarritoContext";
+import LoginContext from "../contexts/LoginContext";
 import ModeloCar from "./ModeloCar";
 import CarroStyle from "../css/Carro.module.css";
 import NavBar from "./NavBar";
@@ -8,10 +9,11 @@ import numeral from "numeral";
 
 const Carro = () => {
   const { carrito } = useContext(CarritoContext);
+  const { usuario } = useContext(LoginContext);
   const [lista, setLista] = useState([]);
   const [total, setTotal] = useState(0);
   const [complete, setComplete] = useState(0);
-  const history = useHistory();
+
 
   useEffect(
     function () {
@@ -27,10 +29,13 @@ const Carro = () => {
     [carrito]
   );
 
-  const handleFinalizarCompra = () => {
-    history.push("/login");
+  const handleFinalizarCompra = () =>{
+    if(!usuario){
+      return <Redirect to="/login" />;
+    }
   };
-  
+
+    
   return (
     <>
       <NavBar />
