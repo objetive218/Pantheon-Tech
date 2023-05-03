@@ -103,3 +103,37 @@
     padding-top: 0rem;
   }
 }
+@media(max-width: 400px){
+  .modelo{
+    width: 46vw;
+    height: 40vh;
+  }
+  .bordecito{
+    display: none;
+  }
+  .nombre{
+    font-size: 0.8rem;
+  }
+  #imgtl{
+    margin: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  #cajita{
+    display: flex;
+    padding: 0;
+    align-items: center;
+    
+  }
+  .caracteristica{
+    display: flex;
+    flex-direction: row;
+    width: 10rem;
+  }
+  .carrito{
+    font-size: 2rem;
+  }
+}
