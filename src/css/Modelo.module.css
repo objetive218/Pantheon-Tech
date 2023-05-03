@@ -48,25 +48,58 @@
   padding: 0.5rem;
   align-items: center;
 }
+#imgtl{
+    margin: 1rem;
+}
 @media(max-width: 780px){
   .modelo{
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-between;
     position: relative;
-    width: 100vw;
-    height: 24vh;
+    width: 25vw;
+    height: 40vh;
     padding: 1rem;
-    gap: 2rem;
+    gap: 3rem;
     margin: 1rem;
+    border: ridge #E90064;
   }
   .bordecito{
     display: none;
   }
+  .nombre{
+    font-size: 0.8rem;
+  }
+  #imgtl{
+    margin: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  #cajita{
+    display: flex;
+    padding: 0;
+    align-items: center;
+    
+  }
   .caracteristica{
     display: flex;
     flex-direction: row;
-    width: 100%;
-    
+    width: 10rem;
+  }
+  .carrito{
+    font-size: 2rem;
+  }
+}
+@media(max-width: 1200px){
+  .image{
+    width: 60%;
+    height: 60%;
+    padding-top: 0rem;
   }
 }
