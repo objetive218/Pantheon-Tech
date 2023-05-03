@@ -6,16 +6,16 @@
   position: relative;
   width: 25vw;
   height: 70vh;
-  padding: 4rem;
+  padding: 2rem;
 }
 .image{
   width: 90%;
   height: 90%;
-  padding-top: 2rem;
+  padding-top: 4rem;
 }
 .nombre{
   font-size: 1.5rem;
-  padding: 1rem;
+  padding: 2rem;
   text-align: center;
 }
 .bordecito{
@@ -45,11 +45,11 @@
 #cajita{
   display: flex;
   flex-direction: row;
-  padding: 0.5rem;
   align-items: center;
 }
 #imgtl{
-    margin: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 @media(max-width: 780px){
   .modelo{
