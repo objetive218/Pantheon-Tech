@@ -104,7 +104,7 @@
   }
 }
 
-@media(max-width: 400px){
+@media(max-width: 450px){
   .modelo{
     width: 88vw;
     height: 37vh;
@@ -112,7 +112,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
   }
   .bordecito{
     display: none;
@@ -123,29 +122,32 @@
   #imgtl{
     margin: 0rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     width: 5rem;
+    height: 11rem;
   }
   #cajita{
     display: flex;
     align-items: center;
     padding: 0.3rem;
     margin-bottom: 1rem;
+    
   }
   .caracteristica{
     display: flex;
     flex-direction: row;
-    width: 10rem;
+    width: 8rem;
+    height: 4rem;
     font-size: 0.8rem;
   }
   .carrito{
     font-size: 2rem;
   }
   .image{
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     padding-top: 0rem;
   }
 }
