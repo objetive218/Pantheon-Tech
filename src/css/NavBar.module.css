@@ -46,6 +46,14 @@
 .carrito {
   color: #e90064;
   font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.texto{
+  font-size: 1.3rem;
 }
 .buscar{
     color:#e90064;
