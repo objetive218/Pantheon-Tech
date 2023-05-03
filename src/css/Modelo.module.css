@@ -5,13 +5,13 @@
   align-items: center;
   position: relative;
   width: 25vw;
-  height: 70vh;
+  height: 65vh;
   padding: 2rem;
 }
 .image{
   width: 90%;
   height: 90%;
-  padding-top: 4rem;
+  padding-top: 3.5rem;
 }
 .nombre{
   font-size: 1.5rem;
