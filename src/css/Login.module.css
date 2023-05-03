@@ -13,7 +13,7 @@
   justify-content: center;
   align-items: center;
   width: 28vw;
-  height: 28vh;
+  height: 32vh;
   background-color: #060047;
   color: white;
   border-radius: 1rem;
@@ -68,7 +68,7 @@
   font-size: 3rem;
   color: #E90064;
 }
-@media(max-width: 780px){
+@media(max-width: 1100px){
   .form{
     width: 16rem;
   }
