@@ -68,3 +68,11 @@
   font-size: 3rem;
   color: #E90064;
 }
+@media(max-width: 780px){
+  .form{
+    width: 16rem;
+  }
+  .test{
+    width: 12rem;
+  }
+}
