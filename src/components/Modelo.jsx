@@ -11,12 +11,15 @@ const Modelo = (props) => {
     <>
       <section className={modeloStyle.modelo}>
         <img className={modeloStyle.bordecito} src={Borde} alt="BordeArticulo"/>
+        <section id={modeloStyle.imgtl}>
+
         <img
           className={modeloStyle.image}
           src={props.fuente}
           alt="imagen modelo"
-        />
+          />
         <h2 className={modeloStyle.nombre} >{props.modelo}</h2>
+          </section>
         <p className={modeloStyle.caracteristica}>{props.especificaciones}</p>
         <section id={modeloStyle.cajita} >
         <p className={modeloStyle.valor}>{`$ ${numeral(props.precio).format('0,0')}`}</p>
