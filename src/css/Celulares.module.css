@@ -1,6 +1,7 @@
 .articulos{
  display: flex;
  flex-direction: row;
+ flex-wrap: wrap;
 }
 .celuco{
  display: flex;
