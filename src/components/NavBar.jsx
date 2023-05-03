@@ -9,9 +9,11 @@ import AudioTitle from "../img/audio.svg";
 import { BsFillPersonFill, BsCart2, BsFillGearFill} from "react-icons/bs";
 import Buscador from "./Buscador";
 import LoginContext from "../contexts/LoginContext";
+import CarritoContext from "../contexts/CarritoContext";
 
 const NavBar = () => {
   const {usuario} = useContext(LoginContext)
+  const {carrito} = useContext(CarritoContext)
   return (
     <nav className={StyleNavBar.header}>
       <Link to="/">
@@ -34,6 +36,7 @@ const NavBar = () => {
         <BsFillPersonFill /> {usuario != null ?<span className={StyleNavBar.usuario}>{usuario.username} {usuario.roll== "administrador"?<BsFillGearFill/>: ""} </span>  : ""}
       </Link>
       <Link className={StyleNavBar.carrito} to="/carro">
+        {carrito.items.length < 1 ?  "" : <h2 className={StyleNavBar.texto}>{carrito.items.length}</h2>}
         <BsCart2 />
       </Link>
     </nav>
