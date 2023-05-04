@@ -42,6 +42,7 @@
   font-size: 3rem;
   color:#e90064;
   padding-left: 2rem;
+  cursor: pointer;
 }
 #cajita{
   display: flex;
