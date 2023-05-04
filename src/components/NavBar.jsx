@@ -17,7 +17,7 @@ const NavBar = () => {
   return (
     <nav className={StyleNavBar.header}>
       <Link to="/">
-        <img src={LogoPantheon} alt="" />
+        <img className={StyleNavBar.pantheon} src={LogoPantheon} alt="" />
       </Link>
       <Link className={StyleNavBar.celulares} to="/celulares">
         <img src={CelularesTitle} alt="celulares" />
