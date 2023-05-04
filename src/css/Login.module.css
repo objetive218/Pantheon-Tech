@@ -13,16 +13,17 @@
   justify-content: center;
   align-items: center;
   width: 28vw;
-  height: 32vh;
+  height: 40vh;
   background-color: #060047;
   color: white;
   border-radius: 1rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding-top: 2rem;
 }
 .form input::placeholder{
   opacity: 1;
-  color: red;
-  background-color: #EFEFEF;
+  color: #E90064;
+  background-color: white;
   
 }
 .form input{
@@ -71,6 +72,8 @@
 @media(max-width: 1100px){
   .form{
     width: 16rem;
+    height: 20rem;
+    padding-top: 0rem;
   }
   .test{
     width: 12rem;
