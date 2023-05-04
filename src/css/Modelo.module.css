@@ -59,6 +59,7 @@
   font-size: 2rem;
   color: #E90064;
   background-color: white;
+  cursor: pointer;
 }
 @media(max-width: 1300px){
   .bordecito{
