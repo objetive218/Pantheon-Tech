@@ -23,4 +23,13 @@
     display: flex;
     flex-direction: column;
    }
+   
+}
+@media(max-width: 1040px){
+  .consola{
+    justify-content: center;
+   }
+   .consola img{
+    width: 58%;
+   }
 }
