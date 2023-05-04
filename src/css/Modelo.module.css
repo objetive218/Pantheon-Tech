@@ -7,6 +7,7 @@
   width: 25vw;
   height: 65vh;
   padding: 2rem;
+  margin-bottom: 6rem;
 }
 .image{
   width: 60vw;
@@ -54,7 +55,11 @@
 .active{
   display: none;
 }
-
+.eliminar{
+  font-size: 2rem;
+  color: #E90064;
+  background-color: white;
+}
 @media(max-width: 1300px){
   .bordecito{
     height: 50%;

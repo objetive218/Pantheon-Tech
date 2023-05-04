@@ -55,7 +55,7 @@ const Modelo = (props) => {
               borrar(props.id);
             }}
           >
-            -
+            <p className={modeloStyle.eliminar} >x</p>
           </button>
         </form>
       </section>
