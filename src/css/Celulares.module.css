@@ -23,4 +23,16 @@
     display: flex;
     flex-direction: column;
    }
+   
+}
+@media(max-width: 1040px){
+  .celuco{
+    height: 20vh;
+    justify-content: center;
+   }
+   .celuco img{
+    width: 50%;
+    height: auto;
+    display: inline-block;
+   }
 }
