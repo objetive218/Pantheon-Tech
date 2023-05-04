@@ -23,4 +23,15 @@
     display: flex;
     flex-direction: column;
    }
+   
+}
+@media(max-width: 1040px){
+  .comput{
+    justify-content: center;
+   }
+   .comput img{
+    width: 65%;
+    height: auto;
+    display: inline-block;
+   }
 }
