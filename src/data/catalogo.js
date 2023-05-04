@@ -165,7 +165,7 @@ catalogo.push(
   },
   {
     id: 13,
-    modelo: "Audífonos Alámbricos JBL T110",
+    modelo: "Audífonos JBL T110",
     especificaciones: `Frecuencia: 20 Hz - 20 kHz
       Largo del cable:	140 cm
       Resistente al agua: No
@@ -177,7 +177,7 @@ catalogo.push(
   },
   {
     id: 14,
-    modelo: "Audífonos Manos Libres MDR-EX15AP",
+    modelo: "Audífonos MDR-EX15AP",
     especificaciones: `Frecuencia: 20 Hz - 20 kHz
       Largo del cable:	120 cm
       Resistente al agua: No
@@ -189,7 +189,7 @@ catalogo.push(
   },
   {
     id: 15,
-    modelo: "Audífonos On-Ear Sony mdr-zx110ap",
+    modelo: "Audífonos Sony mdr-zx110",
     especificaciones: `Frecuencia: 20-20.000 Hz
       Largo del cable:	140 cm
       Resistente al agua: No
