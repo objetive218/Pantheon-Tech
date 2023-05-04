@@ -64,6 +64,9 @@
 }
 
 @media ( max-width: 700px ){
+  .pantheon{
+    width: 5rem;
+  }
   .celulares{
     display: none;
   }
@@ -75,5 +78,14 @@
   }
   .audio{
     display: none;
+  }
+  .logo{
+    font-size: 1.5rem;
+  }
+  .usuario{
+    font-size: 1rem;
+  }
+  .carrito{
+    font-size: 1.2rem;
   }
 }
