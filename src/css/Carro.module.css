@@ -51,8 +51,6 @@
 }
 .vacio{
   display: flex;
-  justify-content: center;
-  align-items: center;
   align-self: center;
   position: absolute;
   bottom: 50%;
