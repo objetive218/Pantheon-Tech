@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from "react";
-import { redirect, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import CarritoContext from "../contexts/CarritoContext";
 import LoginContext from "../contexts/LoginContext";
 import ModeloCar from "./ModeloCar";
@@ -41,23 +41,25 @@ const Carro = () => {
       <h1 className={CarroStyle.title}>Carrito De Compras</h1>
       <section className={CarroStyle.all}>
         <article className={CarroStyle.forma}>
-          {lista.length > 0
-            ? lista.map(function (element, index) {
-                return (
-                  <ModeloCar
-                    key={index}
-                    url={lista[index]?.url}
-                    modelo={lista[index]?.modelo}
-                    precio={`$ ${numeral(lista[index]?.precio).format(
-                      "0,0"
-                    )} COP`}
-                    cantidad={lista[index]?.cantidad}
-                    id={lista[index]?.id}
-                    elemento={lista[index]}
-                  />
-                );
-              })
-            : <h2 className={CarroStyle.vacio}>Tu carrito esta vacío</h2>}
+          {lista.length > 0 ? (
+            lista.map(function (element, index) {
+              return (
+                <ModeloCar
+                  key={index}
+                  url={lista[index]?.url}
+                  modelo={lista[index]?.modelo}
+                  precio={`$ ${numeral(lista[index]?.precio).format(
+                    "0,0"
+                  )} COP`}
+                  cantidad={lista[index]?.cantidad}
+                  id={lista[index]?.id}
+                  elemento={lista[index]}
+                />
+              );
+            })
+          ) : (
+            <h2 className={CarroStyle.vacio}>Tu carrito esta vacío</h2>
+          )}
         </article>
         <article
           className={carrito.items.length == 0 ? "" : CarroStyle.checkout}
