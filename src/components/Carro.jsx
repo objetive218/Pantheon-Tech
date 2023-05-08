@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from "react";
-import { redirect } from "react-router-dom";
+import { redirect, useNavigate } from "react-router-dom";
 import CarritoContext from "../contexts/CarritoContext";
 import LoginContext from "../contexts/LoginContext";
 import ModeloCar from "./ModeloCar";
@@ -13,6 +13,7 @@ const Carro = () => {
   const [lista, setLista] = useState([]);
   const [total, setTotal] = useState(0);
   const [complete, setComplete] = useState(0);
+  const navigate = useNavigate();
 
 
   useEffect(
@@ -28,13 +29,12 @@ const Carro = () => {
     },
     [carrito]
   );
-
   const handleFinalizarCompra = function(e){
     e.preventDefault()
-    console.log("error")
-    if(!usuario){
-      return redirect("/login");
-    }
+    if(usuario == null){
+      alert("Inicia sesion antes de continuar con la compra")
+      navigate("/login");
+   }
   };
 
     
