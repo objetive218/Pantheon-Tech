@@ -49,6 +49,14 @@
   justify-content: flex-end;
     padding: 1rem;
 }
+.vacio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  position: absolute;
+  bottom: 50%;
+}
 @media(max-width: 780px){
   .botton1{
     width: 5rem;
