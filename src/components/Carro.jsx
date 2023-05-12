@@ -58,7 +58,7 @@ const Carro = () => {
               );
             })
           ) : (
-            <h2 className={CarroStyle.vacio}>Tu carrito esta vacío</h2>
+            <h2 className={CarroStyle.vacio}>Tu carrito esta vacío...</h2>
           )}
         </article>
         <article
