@@ -18,6 +18,14 @@
   margin: 1rem;
   border-radius: 2rem;
 }
+.botton2{
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 1rem;
+  border-radius: 2rem;
+  background-color: #e90064;
+  color: white;
+}
 @media(max-width: 1010px){
   .box{
     flex-direction: column;

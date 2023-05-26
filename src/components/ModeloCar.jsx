@@ -10,15 +10,21 @@ const ModeloCar = (props) => {
       <h1>{props.modelo}</h1>
       <h2>{props.precio}</h2>
       <form action="#">
-        <button
-          className={ModCarStyle.botton1}
-          type="button"
-          onClick={function () {
-            eliminarModel(props.id);
-          }}
-        >
-          -
-        </button>
+        {props.cantidad < 2 ? (
+          <button className={ModCarStyle.botton1} type="button">
+            -
+          </button>
+        ) : (
+          <button
+            className={ModCarStyle.botton1}
+            type="button"
+            onClick={function () {
+              eliminarModel(props.id);
+            }}
+          >
+            -
+          </button>
+        )}
         <span>{props.cantidad}</span>
         <button
           className={ModCarStyle.botton1}
@@ -29,6 +35,19 @@ const ModeloCar = (props) => {
         >
           +
         </button>
+        {props.cantidad > 0 ? (
+          <button
+            className={ModCarStyle.botton2}
+            type="button"
+            onClick={function () {
+              eliminarModel(props.id);
+            }}
+          >
+            X
+          </button>
+        ) : (
+          ""
+        )}
       </form>
     </section>
   );
