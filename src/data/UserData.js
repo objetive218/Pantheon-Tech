@@ -1,5 +1,5 @@
 const UserData = [];
-UserData.push({username: "karen23", password: "patoyganso" , roll: "administrador"})
-UserData.push({username: "hola1234", password: "hola1234" , roll: "usuario"})
+UserData.push({username: "admin", password: "admin" , roll: "administrador"})
+UserData.push({username: "user", password: "user" , roll: "usuario"})
 
 export default UserData
