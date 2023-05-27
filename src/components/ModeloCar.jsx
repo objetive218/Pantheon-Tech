@@ -10,21 +10,16 @@ const ModeloCar = (props) => {
       <h1>{props.modelo}</h1>
       <h2>{props.precio}</h2>
       <form action="#">
-        {props.cantidad < 2 ? (
-          <button className={ModCarStyle.botton1} type="button">
-            -
-          </button>
-        ) : (
-          <button
-            className={ModCarStyle.botton1}
-            type="button"
-            onClick={function () {
-              eliminarModel(props.id);
-            }}
-          >
-            -
-          </button>
-        )}
+        <button
+          disabled={props.cantidad < 2 ? true : false}
+          className={ModCarStyle.botton1}
+          type="button"
+          onClick={function () {
+            eliminarModel(props.id);
+          }}
+        >
+          -
+        </button>
         <span>{props.cantidad}</span>
         <button
           className={ModCarStyle.botton1}
