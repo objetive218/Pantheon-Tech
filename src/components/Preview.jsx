@@ -4,10 +4,6 @@ import categoriacomputador from "../img/categoriacomputador.svg";
 import categoriaconsola from "../img/categoriaconsola.svg";
 import categoriaaudio from "../img/categoriaaudio.svg";
 import StylePreview from "../css/Preview.module.css";
-import testcel from "../img/celpreviewtest.png";
-import testcomp from "../img/comppreview.png";
-import testvid from "../img/vidpreview.png";
-import testaudio from "../img/audiopreview.png";
 import { Link } from "react-router-dom";
 
 const Preview = () => {
@@ -32,7 +28,7 @@ const Preview = () => {
             <Link to="/celulares" >
           <img
             className={cambio == "celular" ? StylePreview.preview : StylePreview.active}
-            src={testcel}
+            src="https://i.postimg.cc/ZYxpJ2kP/celpreviewtest.png"
             alt="telefono"
             />
             </Link>
@@ -54,7 +50,7 @@ const Preview = () => {
             <Link to="/computadores" >
           <img
             className={cambio == "computador" ? StylePreview.preview : StylePreview.active}
-            src={testcomp}
+            src="https://i.postimg.cc/T10DQLjN/comppreview.png"
             alt="computador"
             />
             </Link>
@@ -76,7 +72,7 @@ const Preview = () => {
             <Link to="/consolas" >
           <img
             className={cambio == "videojuego" ? StylePreview.preview : StylePreview.active}
-            src={testvid}
+            src="https://i.postimg.cc/pLhm51S6/vidpreview.png"
             alt="consola"
             />
             </Link>
@@ -98,7 +94,7 @@ const Preview = () => {
           <Link to="/audio" >
           <img
             className={cambio == "audio" ? StylePreview.preview : StylePreview.active}
-            src={testaudio}
+            src="https://i.postimg.cc/D0nGqdGb/audiopreview.png"
             alt="audio"
             />
             </Link>
